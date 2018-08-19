@@ -34,8 +34,8 @@
     
     <entry>
       <title>How to add an tags or categories?</title>
-      <link href="/2018/08/18/How-to-add-an-tags-or-categories/"/>
-      <url>/2018/08/18/How-to-add-an-tags-or-categories/</url>
+      <link href="/2018/08/19/How-to-add-an-tags-or-categories/"/>
+      <url>/2018/08/19/How-to-add-an-tags-or-categories/</url>
       <content type="html"><![CDATA[<p>If you want to add an tag such as  <code>Hexo</code> and the categorie we choose is <code>tutorial</code>, just add some change like this</p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line">- Hexo</span><br><span class="line">categories: </span><br><span class="line">- tutorial</span><br></pre></td></tr></table></figure>]]></content>
       
       <categories>

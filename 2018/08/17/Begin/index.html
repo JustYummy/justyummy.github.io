@@ -73,7 +73,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/2018/08/18/How-to-add-an-tags-or-categories/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/2018/08/19/How-to-add-an-tags-or-categories/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
@@ -111,51 +111,22 @@
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-<a href="/">
-    
-    <h1 class="posttitle" itemprop="name headline">
-        Begin
-    </h1>
+    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
 
-
-
-</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Begin</span>
+        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
       </span>
-      
-    <div class="postdate">
-        <time datetime="2018-08-17T13:39:26.000Z" itemprop="datePublished">2018-08-17</time>
+      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
+      <%- partial('_partial/post/tag') %>
     </div>
-
-
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/begin/">begin</a>
-    </div>
-
-
-    </div>
-
   </header>
-  
-
+  <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
-    <p>开始。。。</p>
-<a id="more"></a>
-<p><strong>终于可以用了。</strong></p>
-<p><strong>！！！</strong></p>
-<p>如下图</p>
-<p><img src="http://i1.bvimg.com/658577/d1549872fc9e2e4b.png" alt=""></p>
-<p>为了几个空格。。。</p>
-<p>崩溃了</p>
-
+    <%- page.content %>
   </div>
 </article>
-
-
+<%- partial('_partial/comments') %>
 
     </div>
     
