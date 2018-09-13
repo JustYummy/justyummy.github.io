@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Begin">
 <meta property="og:description" content="Session 4选择十类医生职位    序号 英文 中文     1 internist 内科医生   2 gynecologist 妇科医生   3 obstetrician 妇产科医生   4 pediatrician 儿科医生   5 dermatologist 皮肤科医生   6 ophthalmologist 眼科医生   7 orthopedist 骨科医生   8 cardiolo">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-12T07:28:33.996Z">
+<meta property="og:updated_time" content="2018-09-13T01:55:24.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Word Power Made Easy(part 2)">
 <meta name="twitter:description" content="Session 4选择十类医生职位    序号 英文 中文     1 internist 内科医生   2 gynecologist 妇科医生   3 obstetrician 妇产科医生   4 pediatrician 儿科医生   5 dermatologist 皮肤科医生   6 ophthalmologist 眼科医生   7 orthopedist 骨科医生   8 cardiolo">
@@ -99,7 +99,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-4"><span class="toc-number">1.</span> <span class="toc-text">Session 4</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-4"><span class="toc-number">1.</span> <span class="toc-text">Session 4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-5"><span class="toc-number">2.</span> <span class="toc-text">Session 5</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -109,105 +109,22 @@
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-<a href="/">
-    
-    <h1 class="posttitle" itemprop="name headline">
-        Word Power Made Easy(part 2)
-    </h1>
+    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
 
-
-
-</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Begin</span>
+        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
       </span>
-      
-    <div class="postdate">
-        <time datetime="2018-09-12T06:47:22.000Z" itemprop="datePublished">2018-09-12</time>
+      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
+      <%- partial('_partial/post/tag') %>
     </div>
-
-
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Learning/">English Learning</a>
-    </div>
-
-
-    </div>
-
   </header>
-  
-
+  <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
-    <h2 id="Session-4"><a href="#Session-4" class="headerlink" title="Session 4"></a>Session 4</h2><p>选择十类医生职位</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">序号</th>
-<th style="text-align:center">英文</th>
-<th style="text-align:center">中文</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">internist</td>
-<td style="text-align:center">内科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">gynecologist</td>
-<td style="text-align:center">妇科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">obstetrician</td>
-<td style="text-align:center">妇产科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">pediatrician</td>
-<td style="text-align:center">儿科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">dermatologist</td>
-<td style="text-align:center">皮肤科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">ophthalmologist</td>
-<td style="text-align:center">眼科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">orthopedist</td>
-<td style="text-align:center">骨科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">cardiologist</td>
-<td style="text-align:center">心脏病专家</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">neurologist</td>
-<td style="text-align:center">神经科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">psychiatrist</td>
-<td style="text-align:center">精神病医生</td>
-</tr>
-</tbody>
-</table>
-
+    <%- page.content %>
   </div>
 </article>
-
-
+<%- partial('_partial/comments') %>
 
     </div>
     
@@ -227,7 +144,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-4"><span class="toc-number">1.</span> <span class="toc-text">Session 4</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-4"><span class="toc-number">1.</span> <span class="toc-text">Session 4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-5"><span class="toc-number">2.</span> <span class="toc-text">Session 5</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
