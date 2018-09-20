@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Begin">
 <meta property="og:description" content="Session 11选择十类科学家   序号 英文 中文     1 anthropologist 人类学家   2 astronomer 天文学家   3 geologist 地质学家   4 biologist 生物学家   5 botanist 植物学家   6 zoologist 动物学家   7 entomologist 昆虫学家   8 philologist 语文学家   9 sem">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-19T01:57:06.288Z">
+<meta property="og:updated_time" content="2018-09-20T13:51:06.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Word Power Made Easy(part 4)">
 <meta name="twitter:description" content="Session 11选择十类科学家   序号 英文 中文     1 anthropologist 人类学家   2 astronomer 天文学家   3 geologist 地质学家   4 biologist 生物学家   5 botanist 植物学家   6 zoologist 动物学家   7 entomologist 昆虫学家   8 philologist 语文学家   9 sem">
@@ -99,7 +99,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-11"><span class="toc-number">1.</span> <span class="toc-text">Session 11</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择十类科学家"><span class="toc-number">1.1.</span> <span class="toc-text">选择十类科学家</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-11"><span class="toc-number">1.</span> <span class="toc-text">Session 11</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择十类科学家"><span class="toc-number">1.1.</span> <span class="toc-text">选择十类科学家</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-12"><span class="toc-number">2.</span> <span class="toc-text">Session 12</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-people-and-the-star"><span class="toc-number">2.1.</span> <span class="toc-text">1. people and the star</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-earth-and-its-life"><span class="toc-number">2.2.</span> <span class="toc-text">2. the earth and its life</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -109,104 +109,22 @@
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-<a href="/">
-    
-    <h1 class="posttitle" itemprop="name headline">
-        Word Power Made Easy(part 4)
-    </h1>
+    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
 
-
-
-</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Begin</span>
+        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
       </span>
-      
-    <div class="postdate">
-        <time datetime="2018-09-19T01:35:22.000Z" itemprop="datePublished">2018-09-19</time>
+      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
+      <%- partial('_partial/post/tag') %>
     </div>
-
-
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Learning/">English Learning</a>
-    </div>
-
-
-    </div>
-
   </header>
-  
-
+  <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
-    <h2 id="Session-11"><a href="#Session-11" class="headerlink" title="Session 11"></a>Session 11</h2><h3 id="选择十类科学家"><a href="#选择十类科学家" class="headerlink" title="选择十类科学家"></a>选择十类科学家</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">序号</th>
-<th style="text-align:center">英文</th>
-<th style="text-align:center">中文</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">anthropologist</td>
-<td style="text-align:center">人类学家</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">astronomer</td>
-<td style="text-align:center">天文学家</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">geologist</td>
-<td style="text-align:center">地质学家</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">biologist</td>
-<td style="text-align:center">生物学家</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">botanist</td>
-<td style="text-align:center">植物学家</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">zoologist</td>
-<td style="text-align:center">动物学家</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">entomologist</td>
-<td style="text-align:center">昆虫学家</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">philologist</td>
-<td style="text-align:center">语文学家</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">semanticist</td>
-<td style="text-align:center">语意学家</td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">sciologist</td>
-<td style="text-align:center">社会学家</td>
-</tr>
-</tbody>
-</table>
-
+    <%- page.content %>
   </div>
 </article>
-
-
+<%- partial('_partial/comments') %>
 
     </div>
     
@@ -226,7 +144,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-11"><span class="toc-number">1.</span> <span class="toc-text">Session 11</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择十类科学家"><span class="toc-number">1.1.</span> <span class="toc-text">选择十类科学家</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-11"><span class="toc-number">1.</span> <span class="toc-text">Session 11</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择十类科学家"><span class="toc-number">1.1.</span> <span class="toc-text">选择十类科学家</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-12"><span class="toc-number">2.</span> <span class="toc-text">Session 12</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-people-and-the-star"><span class="toc-number">2.1.</span> <span class="toc-text">1. people and the star</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-earth-and-its-life"><span class="toc-number">2.2.</span> <span class="toc-text">2. the earth and its life</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
