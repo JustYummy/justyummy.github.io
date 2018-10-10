@@ -188,7 +188,7 @@
       <title>Begin</title>
       <link href="/2018/08/17/Begin/"/>
       <url>/2018/08/17/Begin/</url>
-      <content type="html"><![CDATA[<p>开始。。。</p><a id="more"></a><p><strong>终于可以用了。</strong></p><p><strong>！！！</strong></p><p>如下图</p><p>为了几个空格。。。</p><p>崩溃了</p>]]></content>
+      <content type="html"><![CDATA[<p>开始。。。</p><a id="more"></a><p><strong>终于可以用了。</strong></p><p><strong>！！！</strong></p><p>配置文件的所有冒号后面均要添加空格</p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">title: Begin</span><br></pre></td></tr></table></figure><p>为了几个空格。。。</p><p>崩溃了</p>]]></content>
       
       <categories>
           
