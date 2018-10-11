@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Begin">
 <meta property="og:description" content="Series数据结构导入pandas import pandas as pdpd.Series? 列表转为pd的Series animals = [&apos;Tiger&apos;, &apos;Bear&apos;, &apos;Moose&apos;]pd.Series(animals) 0    Tiger 1     Bear 2    Moose dtype: object pd会自动识别类型 numbers = [1, 2, 3]pd.Ser">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-10T14:20:24.079Z">
+<meta property="og:updated_time" content="2018-10-11T08:56:39.922Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Something about pandas">
 <meta name="twitter:description" content="Series数据结构导入pandas import pandas as pdpd.Series? 列表转为pd的Series animals = [&apos;Tiger&apos;, &apos;Bear&apos;, &apos;Moose&apos;]pd.Series(animals) 0    Tiger 1     Bear 2    Moose dtype: object pd会自动识别类型 numbers = [1, 2, 3]pd.Ser">
@@ -99,7 +99,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Series数据结构"><span class="toc-number">1.</span> <span class="toc-text">Series数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询Series"><span class="toc-number">2.</span> <span class="toc-text">查询Series</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DataFrame数据结构"><span class="toc-number">3.</span> <span class="toc-text">DataFrame数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#To-be-Done"><span class="toc-number">3.1.</span> <span class="toc-text">To be Done</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Dataframe-Indexing-and-Loading"><span class="toc-number">4.</span> <span class="toc-text">Dataframe Indexing and Loading</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Querying-a-DataFrame"><span class="toc-number">5.</span> <span class="toc-text">Querying a DataFrame</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Indexing-Dataframes"><span class="toc-number">6.</span> <span class="toc-text">Indexing Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Missing-values"><span class="toc-number">7.</span> <span class="toc-text">Missing values</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Series数据结构"><span class="toc-number">1.</span> <span class="toc-text">Series数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询Series"><span class="toc-number">2.</span> <span class="toc-text">查询Series</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DataFrame数据结构"><span class="toc-number">3.</span> <span class="toc-text">DataFrame数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Dataframe的检索和导入"><span class="toc-number">4.</span> <span class="toc-text">Dataframe的检索和导入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Querying-a-DataFrame"><span class="toc-number">5.</span> <span class="toc-text">Querying a DataFrame</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Indexing-Dataframes"><span class="toc-number">6.</span> <span class="toc-text">Indexing Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Missing-values"><span class="toc-number">7.</span> <span class="toc-text">Missing values</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -341,37 +341,40 @@ Store 1     2.5
 Name: Cost, dtype: float64
 </code></pre><p>表格的转置</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.T<span class="comment">#转置</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th><strong>Store 1</strong></th>
-<th><strong>Store 1</strong></th>
-<th><strong>Store 2</strong></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Cost</strong></td>
-<td>22.5</td>
-<td>2.5</td>
-<td>5</td>
-</tr>
-<tr>
-<td><strong>Item Purchased</strong></td>
-<td>Dog Food</td>
-<td>Kitty Litter</td>
-<td>Bird Seed</td>
-</tr>
-<tr>
-<td><strong>Name</strong></td>
-<td>Chris</td>
-<td>Kevyn</td>
-<td>Vinod</td>
-</tr>
-</tbody>
+<div style="width:device-width;overflow:auto">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Store 1</th>
+      <th>Store 1</th>
+      <th>Store 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Cost</th>
+      <td>22.5</td>
+      <td>2.5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Item Purchased</th>
+      <td>Dog Food</td>
+      <td>Kitty Litter</td>
+      <td>Bird Seed</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>Chris</td>
+      <td>Kevyn</td>
+      <td>Vinod</td>
+    </tr>
+  </tbody>
 </table>
-<p>通过表哥转置可以定为横向元素</p>
+</div>
+
+<p>通过表格转置可以定为横向元素</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.T.loc[<span class="string">'Cost'</span>]</span><br></pre></td></tr></table></figure>
 <pre><code>Store 1    22.5
 Store 1     2.5
@@ -389,52 +392,62 @@ Store 1     2.5
 Name: Cost, dtype: float64
 </code></pre><p>定位多个元素</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.loc[:,[<span class="string">'Name'</span>, <span class="string">'Cost'</span>]]</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th></th>
-<th><strong>Name</strong></th>
-<th><strong>Cost</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Store 1</strong></td>
-<td>Chris</td>
-<td>22.5</td>
-</tr>
-<tr>
-<td><strong>Store 1</strong></td>
-<td>Kevyn</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td><strong>Store 2</strong></td>
-<td>Vinod</td>
-<td>5.0</td>
-</tr>
-</tbody>
+<div style="width:device-width;overflow:auto">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Store 1</th>
+      <td>Chris</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <th>Store 1</th>
+      <td>Kevyn</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>Store 2</th>
+      <td>Vinod</td>
+      <td>5.0</td>
+    </tr>
+  </tbody>
 </table>
+</div>
+
+
+
 <p>利用drop删除指定的元素并返回修改后的副本</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.drop(<span class="string">'Store 1'</span>)<span class="comment">#删除，返回副本</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th><strong>Cost</strong></th>
-<th><strong>Item Purchased</strong></th>
-<th><strong>Name</strong></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Store 2</strong></td>
-<td>5.0</td>
-<td>Bird Seed</td>
-<td>Vinod</td>
-</tr>
-</tbody>
+<div style="width:device-width;overflow:auto">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Cost</th>
+      <th>Item Purchased</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Store 2</th>
+      <td>5.0</td>
+      <td>Bird Seed</td>
+      <td>Vinod</td>
+    </tr>
+  </tbody>
 </table>
+</div>
+
+
+
 <p>原本不改变</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
@@ -469,6 +482,7 @@ Name: Cost, dtype: float64
   </tbody>
 </table>
 </div>
+
 
 <p>利用copy方法进行拷贝</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">copy_df = df.copy()</span><br><span class="line">copy_df = copy_df.drop(<span class="string">'Store 1'</span>)</span><br><span class="line">copy_df</span><br></pre></td></tr></table></figure>
@@ -557,7 +571,8 @@ Name: Cost, dtype: float64
 </div>
 
 
-<h2 id="To-be-Done"><a href="#To-be-Done" class="headerlink" title="To be Done"></a>To be Done</h2><h1 id="Dataframe-Indexing-and-Loading"><a href="#Dataframe-Indexing-and-Loading" class="headerlink" title="Dataframe Indexing and Loading"></a>Dataframe Indexing and Loading</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">costs = df[<span class="string">'Cost'</span>]</span><br><span class="line">costs</span><br></pre></td></tr></table></figure>
+
+<h1 id="Dataframe的检索和导入"><a href="#Dataframe的检索和导入" class="headerlink" title="Dataframe的检索和导入"></a>Dataframe的检索和导入</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">costs = df[<span class="string">'Cost'</span>]</span><br><span class="line">costs</span><br></pre></td></tr></table></figure>
 <pre><code>Store 1    22.5
 Store 1     2.5
 Store 2     5.0
@@ -606,10 +621,9 @@ Name: Cost, dtype: float64
 </div>
 
 
-
-
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">!cat olympics.csv</span><br></pre></td></tr></table></figure>
-<pre><code>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+<pre style="height:500px;width:device-width;overflow:auto"><code style="text-align: left;">
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
 ,№ Summer,01 !,02 !,03 !,Total,№ Winter,01 !,02 !,03 !,Total,№ Games,01 !,02 !,03 !,Combined total
 Afghanistan (AFG),13,0,0,2,2,0,0,0,0,0,13,0,0,2,2
 Algeria (ALG),12,5,2,8,15,3,0,0,0,0,15,5,2,8,15
@@ -758,7 +772,12 @@ Zambia (ZAM) [ZAM],12,0,1,1,2,0,0,0,0,0,12,0,1,1,2
 Zimbabwe (ZIM) [ZIM],12,3,4,1,8,1,0,0,0,0,13,3,4,1,8
 Mixed team (ZZX) [ZZX],3,8,5,4,17,0,0,0,0,0,3,8,5,4,17
 Totals,27,4809,4775,5130,14714,22,959,958,948,2865,49,5768,5733,6078,17579
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'olympics.csv'</span>)</span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
+</code>
+</pre>
+
+
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'olympics.csv'</span>)</span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -883,9 +902,8 @@ Totals,27,4809,4775,5130,14714,22,959,958,948,2865,49,5768,5733,6078,17579
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'olympics.csv'</span>, index_col = <span class="number">0</span>, skiprows=<span class="number">1</span>)</span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
+<p>去除干扰因素</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'olympics.csv'</span>, index_col = <span class="number">0</span>, skiprows=<span class="number">1</span>)</span><br><span class="line"><span class="comment">#index_col为开始索引的列，skiprows为跳过的行数</span></span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -1004,14 +1022,14 @@ Totals,27,4809,4775,5130,14714,22,959,958,948,2865,49,5768,5733,6078,17579
 </div>
 
 
-
-
+<p>输出行列名</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.columns</span><br></pre></td></tr></table></figure>
 <pre><code>Index([&apos;№ Summer&apos;, &apos;01 !&apos;, &apos;02 !&apos;, &apos;03 !&apos;, &apos;Total&apos;, &apos;№ Winter&apos;, &apos;01 !.1&apos;,
        &apos;02 !.1&apos;, &apos;03 !.1&apos;, &apos;Total.1&apos;, &apos;№ Games&apos;, &apos;01 !.2&apos;, &apos;02 !.2&apos;, &apos;03 !.2&apos;,
        &apos;Combined total&apos;],
       dtype=&apos;object&apos;)
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> df.columns:</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'01'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Gold'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'02'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Silver'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'03'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Bronze'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">1</span>]==<span class="string">'№'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'#'</span> + col[<span class="number">1</span>:]&#125;, inplace=<span class="keyword">True</span>) </span><br><span class="line"></span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
+</code></pre><p>替换行列名</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> df.columns:</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'01'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Gold'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'02'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Silver'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">2</span>]==<span class="string">'03'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'Bronze'</span> + col[<span class="number">4</span>:]&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">    <span class="keyword">if</span> col[:<span class="number">1</span>]==<span class="string">'№'</span>:</span><br><span class="line">        df.rename(columns=&#123;col:<span class="string">'#'</span> + col[<span class="number">1</span>:]&#125;, inplace=<span class="keyword">True</span>) </span><br><span class="line"></span><br><span class="line">df.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -1130,9 +1148,10 @@ Totals,27,4809,4775,5130,14714,22,959,958,948,2865,49,5768,5733,6078,17579
 </div>
 
 
-
-<h1 id="Querying-a-DataFrame"><a href="#Querying-a-DataFrame" class="headerlink" title="Querying a DataFrame"></a>Querying a DataFrame</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Gold'</span>] &gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
-<pre><code>Afghanistan (AFG)                               False
+<h1 id="Querying-a-DataFrame"><a href="#Querying-a-DataFrame" class="headerlink" title="Querying a DataFrame"></a>Querying a DataFrame</h1><p>** #布林遮蔽 boolean mask</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Gold'</span>] &gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<pre style="height:500px;width:device-width;overflow:auto"><code style="text-align: left;">
+Afghanistan (AFG)                               False
 Algeria (ALG)                                    True
 Argentina (ARG)                                  True
 Armenia (ARM)                                    True
@@ -1194,7 +1213,13 @@ Zimbabwe (ZIM) [ZIM]                             True
 Mixed team (ZZX) [ZZX]                           True
 Totals                                           True
 Name: Gold, dtype: bool
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">only_gold = df.where(df[<span class="string">'Gold'</span>] &gt; <span class="number">0</span>)</span><br><span class="line">only_gold.head()</span><br></pre></td></tr></table></figure>
+</code>
+</pre>
+
+
+
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">only_gold = df.where(df[<span class="string">'Gold'</span>] &gt; <span class="number">0</span>)</span><br><span class="line">only_gold.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -2610,7 +2635,7 @@ Name: (Michigan, Washtenaw County), dtype: int64
 
 
 <h1 id="Missing-values"><a href="#Missing-values" class="headerlink" title="Missing values"></a>Missing values</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'log.csv'</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
-<div style="width:device-width;overflow:auto">
+<div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2928,9 +2953,10 @@ Name: (Michigan, Washtenaw County), dtype: int64
 
 
 
+
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">df.fillna?</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.set_index(<span class="string">'time'</span>)</span><br><span class="line">df = df.sort_index()</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
-<div style="width:device-width;overflow:auto">
+<div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3222,8 +3248,9 @@ Name: (Michigan, Washtenaw County), dtype: int64
 
 
 
+
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.reset_index()</span><br><span class="line">df = df.set_index([<span class="string">'time'</span>, <span class="string">'user'</span>])</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
-<div style="width:device-width;overflow:auto">
+<div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3583,7 +3610,7 @@ Name: (Michigan, Washtenaw County), dtype: int64
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Series数据结构"><span class="toc-number">1.</span> <span class="toc-text">Series数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询Series"><span class="toc-number">2.</span> <span class="toc-text">查询Series</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DataFrame数据结构"><span class="toc-number">3.</span> <span class="toc-text">DataFrame数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#To-be-Done"><span class="toc-number">3.1.</span> <span class="toc-text">To be Done</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Dataframe-Indexing-and-Loading"><span class="toc-number">4.</span> <span class="toc-text">Dataframe Indexing and Loading</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Querying-a-DataFrame"><span class="toc-number">5.</span> <span class="toc-text">Querying a DataFrame</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Indexing-Dataframes"><span class="toc-number">6.</span> <span class="toc-text">Indexing Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Missing-values"><span class="toc-number">7.</span> <span class="toc-text">Missing values</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Series数据结构"><span class="toc-number">1.</span> <span class="toc-text">Series数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询Series"><span class="toc-number">2.</span> <span class="toc-text">查询Series</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DataFrame数据结构"><span class="toc-number">3.</span> <span class="toc-text">DataFrame数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Dataframe的检索和导入"><span class="toc-number">4.</span> <span class="toc-text">Dataframe的检索和导入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Querying-a-DataFrame"><span class="toc-number">5.</span> <span class="toc-text">Querying a DataFrame</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Indexing-Dataframes"><span class="toc-number">6.</span> <span class="toc-text">Indexing Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Missing-values"><span class="toc-number">7.</span> <span class="toc-text">Missing values</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
