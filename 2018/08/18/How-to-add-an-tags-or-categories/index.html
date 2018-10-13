@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Begin">
 <meta property="og:description" content="If you want to add an tag such as  Hexo and the categorie we choose is tutorial, just add some change like this tags: - Hexocategories: - tutorial">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-19T08:25:21.530Z">
+<meta property="og:updated_time" content="2018-10-13T06:01:16.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to add an tags or categories?">
 <meta name="twitter:description" content="If you want to add an tag such as  Hexo and the categorie we choose is tutorial, just add some change like this tags: - Hexocategories: - tutorial">
@@ -115,22 +115,52 @@
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
+<a href="/">
+    
+    <h1 class="posttitle" itemprop="name headline">
+        How to add an tags or categories?
+    </h1>
 
+
+
+</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
+        <span itemprop="name">Begin</span>
       </span>
-      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
-      <%- partial('_partial/post/tag') %>
+      
+    <div class="postdate">
+        <time datetime="2018-08-18T02:34:21.000Z" itemprop="datePublished">2018-08-18</time>
     </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Hexo/">Hexo</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
+    </div>
+
+
+    </div>
+
   </header>
-  <%- partial('_partial/post/gallery') %>
+  
+
   <div class="content" itemprop="articleBody">
-    <%- page.content %>
+    <p>If you want to add an tag such as  <code>Hexo</code> and the categorie we choose is <code>tutorial</code>, just add some change like this</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tags: </span><br><span class="line">- Hexo</span><br><span class="line">categories: </span><br><span class="line">- tutorial</span><br></pre></td></tr></table></figure>
+
   </div>
 </article>
-<%- partial('_partial/comments') %>
+
+
 
     </div>
     
