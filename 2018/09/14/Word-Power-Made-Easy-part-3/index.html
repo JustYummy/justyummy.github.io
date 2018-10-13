@@ -111,354 +111,29 @@
 </div>
 
     
-    <div class="content index my4">
+    <div class="content index py4">
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-<a href="/">
-    
-    <h1 class="posttitle" itemprop="name headline">
-        Word Power Made Easy(part 3)
-    </h1>
+    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
 
-
-
-</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Begin</span>
+        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
       </span>
-      
-    <div class="postdate">
-        <time datetime="2018-09-14T00:46:18.000Z" itemprop="datePublished">2018-09-14</time>
+      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
+      <%- partial('_partial/post/tag') %>
     </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Word-Power-Made-Easy/">Word Power Made Easy</a>
-    </div>
-
-
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Learning/">English Learning</a>
-    </div>
-
-
-    </div>
-
   </header>
-  
-
+  <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
-    <h2 id="Session-7"><a href="#Session-7" class="headerlink" title="Session 7"></a>Session 7</h2><h3 id="选择十类从业者"><a href="#选择十类从业者" class="headerlink" title="选择十类从业者"></a>选择十类从业者</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">序号</th>
-<th style="text-align:center">英文</th>
-<th style="text-align:center">中文</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">psychologist</td>
-<td style="text-align:center">心理学家</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">psychoanalyst</td>
-<td style="text-align:center">心里分析家</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">orthodontist</td>
-<td style="text-align:center">牙齿矫正医师</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">optometrist</td>
-<td style="text-align:center">验光技师</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">optician</td>
-<td style="text-align:center">配置眼镜技师</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">osteopath</td>
-<td style="text-align:center">正骨医师</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">chiropractor</td>
-<td style="text-align:center">按摩技师</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">podiatrist</td>
-<td style="text-align:center">足科医生</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">graphologist</td>
-<td style="text-align:center">笔迹学家</td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">gerontologist</td>
-<td style="text-align:center">老年问题专家</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Session-8"><a href="#Session-8" class="headerlink" title="Session 8"></a>Session 8</h2><h3 id="1-the-mental-life"><a href="#1-the-mental-life" class="headerlink" title="1. the mental life"></a>1. the mental life</h3><p>psyche(心里生活, 心灵)</p>
-<p>psychic(超自然的, 有特异功能的)</p>
-<p><strong>psyche</strong>(spirit, soul ,mind) + <strong>logos</strong>(science) -&gt; psychology(心理学)</p>
-<p>psychologist(~家), psychological(~的)</p>
-<p>psyche+ <strong>pathos</strong>(suffering, disease) -&gt; psychopathy(心理变态, 精神缭乱)</p>
-<p>psychopathic(~的), psychopath(~者)</p>
-<p>psyche + <strong>soma</strong>(body) -&gt; psychosomatic(心理压力造成的)</p>
-<p>psyche + analysis -&gt; psychoanalysis(精神分析)</p>
-<p>psychoanalytic(~的), psychoanalyst(~者)</p>
-<p>psyche + <strong>genesis</strong>(birth, origin) -&gt; psychogenic(心因性)</p>
-<p>psyche + therapy -&gt; psychotherapy(精神疗法)</p>
-<p>psychotherapeutic(~的), psychotherapist(~者)</p>
-<h2 id="Session-9"><a href="#Session-9" class="headerlink" title="Session 9"></a>Session 9</h2><h3 id="1-the-whole-tooth"><a href="#1-the-whole-tooth" class="headerlink" title="1. the whole tooth"></a>1. the whole tooth</h3><p>orthos(correct) + <strong>odontos</strong>(tooth) -&gt; orthodontist(正牙医生)</p>
-<p>paidos + odontos -&gt; pedodontist(儿科牙医)</p>
-<p><strong>peri-</strong>(around, surringding) + odontos -&gt; periodontist(牙床专家)</p>
-<p><strong>endo-</strong>(inner, within) + odontos -&gt; endodontist(牙髓学专家)</p>
-<p><strong>ex-</strong>(out) + odontos -&gt; exodontist(拔牙专家)</p>
-<ul>
-<li>-ist(~家), -ia(~科学), -ic(~的)</li>
-</ul>
-<h3 id="2-measurement"><a href="#2-measurement" class="headerlink" title="2. measurement"></a>2. measurement</h3><p>opsis,optikos(view, vision) + <strong>metron</strong>(measurement) -&gt; optometrist(验光技师)</p>
-<p><strong>therme</strong>(heat) + metron -&gt; thermometer(温度计)</p>
-<p><strong>baros</strong>(weight) + metron -&gt; barometer(气压计)</p>
-<p><strong>sphygmos</strong>(pulse) + metron -&gt; sphygmomanometer(血压计)</p>
-<p>metric system(公制, 十进制)</p>
-<h3 id="3-bones-feet-and-hands"><a href="#3-bones-feet-and-hands" class="headerlink" title="3. bones, feet, and hands"></a>3. bones, feet, and hands</h3><p><strong>osteon</strong>(bone) + <strong>pathos</strong>(suffering, disease) -&gt; osteopath(整骨疗法家)</p>
-<p>osteopathy(整骨疗法), osteopathic(整骨疗法的)</p>
-<p><strong>pous, podos</strong>(foot) + iatreia(medical healing) -&gt; podiatrist(足病医生)</p>
-<p>podiatry(足病治疗), podiatric(~的)</p>
-<p><strong>okto</strong>(eight) + pous, podos -&gt; octopus(章鱼, 八爪鱼)</p>
-<p><strong>platys</strong>(broads, float) + pous, podos -&gt; platypus(鸭嘴兽)</p>
-<p>pous, podos + <strong>-ium</strong>(place where) -&gt; podium(讲台)</p>
-<p>gymnasium(健身房), stadium(体育场), auditorium(礼堂)</p>
-<p><strong>tri-</strong>(three) + pous, podos -&gt; tripod(三脚架)</p>
-<p><strong>cheir (chiro-)</strong> + pous, podos -&gt; chiropodist(足病症疗师)</p>
-<p>chiropody(足疗)</p>
-<p>cheir(chiro-) + practical(do) -&gt; chiropractor(按摩师)</p>
-<p>cheir(chiro-) + <strong>graphein</strong>(to write) -&gt; chirography(书法)</p>
-<p>chirographer(~家), chirographic(~的)</p>
-<p>cheir(chiro-) + <strong>-mancy</strong>(fore- telling, prediction) -&gt; chiromancy(手相术) </p>
-<p>chiromancer(手相家), chiromantic(~的)</p>
-<h2 id="Session-10"><a href="#Session-10" class="headerlink" title="Session 10"></a>Session 10</h2><h3 id="1-writing-and-writers"><a href="#1-writing-and-writers" class="headerlink" title="1. writing and writers"></a>1. writing and writers</h3><p>graphein(to write) </p>
-<p><strong>graphein</strong>(to write) + logos(science) -&gt; graphologist(笔相家) </p>
-<p>graphology(笔迹学), graphological(~的)</p>
-<p><strong>kallos</strong>(beauty) + graphein(to write) -&gt; calligrapher(书法家)</p>
-<p>calligraphy(书法), calligraphic(~的)</p>
-<p><strong>kakos</strong>(bad, harsh) + graphein(to write) -&gt; cacography(拙劣的书法)</p>
-<p>cacographer(~的人), cacographic(~的)</p>
-<p><strong>kardia</strong>(heart) + graphein(to write) -&gt; cardiograph(心电图仪)</p>
-<p><strong>photos</strong>(light) + graphein(to write) -&gt; photograph(照片)</p>
-<p><strong>phone(</strong>sound) + graphein(to write) -&gt; phonograph(留声机)</p>
-<p><strong>tele-</strong>(distance) + graphein(to write) -&gt; telegraph(电报)</p>
-<p><strong>bios</strong>(life) + graphein(to write) -&gt; biography(传记)</p>
-<h3 id="2-aging-and-the-old"><a href="#2-aging-and-the-old" class="headerlink" title="2. aging and the old"></a>2. aging and the old</h3><p><strong>geras</strong>(old age) + iatreia(medical healing) -&gt; geriatrician(老年病学专家)</p>
-<p><strong>geron</strong>(old man) + logos(science) -&gt; gerontologist(老年学专家)</p>
-<p>gerontology(老年学), gerontological(老年学的)</p>
-<p><strong>senes</strong>(old) </p>
-<ul>
-<li><p>-&gt; senile(老迈的) -&gt; senility(n, 衰老)</p>
-</li>
-<li><p>-&gt; senior(年长的) -&gt; seniority((n, 年长)</p>
-</li>
-<li><p>-&gt; senate(参议院)</p>
-</li>
-</ul>
-<p>senes(old) + <strong>-escent</strong>(grow up) -&gt; senescent(衰老的) </p>
-<ul>
-<li>adolescent(青少年的) convalescent(康复的) obsolescent(淘汰的)</li>
-</ul>
-<h2 id="Prefix-Root-Suffix"><a href="#Prefix-Root-Suffix" class="headerlink" title="Prefix, Root, Suffix"></a>Prefix, Root, Suffix</h2><table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1</strong></td>
-<td>baros</td>
-<td>weight</td>
-<td><strong>20</strong></td>
-<td>osteon</td>
-<td>bone</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td>bios</td>
-<td>life</td>
-<td><strong>21</strong></td>
-<td>paidos (ped-)</td>
-<td>child</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td>cheir (chiro-)</td>
-<td>hand</td>
-<td><strong>22</strong></td>
-<td>pathos</td>
-<td>suffering, disease</td>
-</tr>
-<tr>
-<td><strong>4</strong></td>
-<td>endo-</td>
-<td>inner, within</td>
-<td><strong>23</strong></td>
-<td>peri-</td>
-<td>around, surrounding</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td>ex-</td>
-<td>out</td>
-<td><strong>24</strong></td>
-<td>photos</td>
-<td>light</td>
-</tr>
-<tr>
-<td><strong>6</strong></td>
-<td>genesis</td>
-<td>birth, origin</td>
-<td><strong>25</strong></td>
-<td>platys</td>
-<td>broad, flat</td>
-</tr>
-<tr>
-<td><strong>7</strong></td>
-<td>geras</td>
-<td>old age</td>
-<td><strong>26</strong></td>
-<td>pous, podos</td>
-<td>foot</td>
-</tr>
-<tr>
-<td><strong>8</strong></td>
-<td>geron</td>
-<td>old man</td>
-<td><strong>27</strong></td>
-<td>psyche</td>
-<td>spirit, soul, mind</td>
-</tr>
-<tr>
-<td><strong>9</strong></td>
-<td>graphein</td>
-<td>to write</td>
-<td><strong>28</strong></td>
-<td>pyge</td>
-<td>buttocks</td>
-</tr>
-<tr>
-<td><strong>10</strong></td>
-<td>iatreia</td>
-<td>medical healing</td>
-<td><strong>29</strong></td>
-<td>senex</td>
-<td>old</td>
-</tr>
-<tr>
-<td><strong>11</strong></td>
-<td>kakos</td>
-<td>bad, harsh</td>
-<td><strong>30</strong></td>
-<td>soma</td>
-<td>body</td>
-</tr>
-<tr>
-<td><strong>12</strong></td>
-<td>kallos</td>
-<td>beauty</td>
-<td><strong>31</strong></td>
-<td>sphygmos</td>
-<td>pulse</td>
-</tr>
-<tr>
-<td><strong>13</strong></td>
-<td>kardia</td>
-<td>heart</td>
-<td><strong>32</strong></td>
-<td>tele-</td>
-<td>distance</td>
-</tr>
-<tr>
-<td><strong>14</strong></td>
-<td>mancy</td>
-<td>prediction</td>
-<td><strong>33</strong></td>
-<td>therme</td>
-<td>heat</td>
-</tr>
-<tr>
-<td><strong>15</strong></td>
-<td>metron</td>
-<td>measurement</td>
-<td><strong>34</strong></td>
-<td>tri-</td>
-<td>three</td>
-</tr>
-<tr>
-<td><strong>16</strong></td>
-<td>odontos</td>
-<td>tooth</td>
-<td><strong>35</strong></td>
-<td>-er</td>
-<td>one who</td>
-</tr>
-<tr>
-<td><strong>17</strong></td>
-<td>okto</td>
-<td>eight</td>
-<td><strong>36</strong></td>
-<td>-escent</td>
-<td>growing, becoming</td>
-</tr>
-<tr>
-<td><strong>18</strong></td>
-<td>opsis, optikos</td>
-<td>vision</td>
-<td><strong>37</strong></td>
-<td>-ic</td>
-<td>adjective suffix</td>
-</tr>
-<tr>
-<td><strong>19</strong></td>
-<td>orthos</td>
-<td>straight, correct</td>
-<td><strong>38</strong></td>
-<td>-ium</td>
-<td>place where</td>
-</tr>
-</tbody>
-</table>
-
+    <%- page.content %>
   </div>
 </article>
+<%- partial('_partial/comments') %>
 
-
-
-    </div>
-    
-      <div id="footer-post-container">
+        
+          <div id="footer-post-container">
   <div id="footer-post">
 
     <div id="nav-footer" style="display: none">
@@ -507,8 +182,8 @@
   </div>
 </div>
 
-    
-    <footer id="footer">
+        
+        <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2018 Yummy
   </div>
@@ -531,6 +206,7 @@
   </div>
 </footer>
 
+    </div>
 </body>
 </html>
 <!-- styles -->
