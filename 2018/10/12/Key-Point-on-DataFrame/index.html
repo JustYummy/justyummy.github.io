@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Begin">
 <meta property="og:description" content="Dataframes 数据的第一列  df.index  数据的第一行  df.columns 将行索引替换，col替换 columns=&amp;#123;col:&apos;Gold&apos;+col[4:]&amp;#125;  DateFrame切分  df = df[&apos;Gold&apos;]	#抽取一列 Algeria                               5 Argentina">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-12T14:59:13.214Z">
+<meta property="og:updated_time" content="2018-10-12T15:54:18.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Key Point on DataFrame">
 <meta name="twitter:description" content="Dataframes 数据的第一列  df.index  数据的第一行  df.columns 将行索引替换，col替换 columns=&amp;#123;col:&apos;Gold&apos;+col[4:]&amp;#125;  DateFrame切分  df = df[&apos;Gold&apos;]	#抽取一列 Algeria                               5 Argentina">
@@ -62,6 +62,10 @@
           <li><a href="/">Home</a></li>
          
           <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/categories">Categories</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
          
           <li><a href="/about/">About</a></li>
         
@@ -127,6 +131,8 @@
         <time datetime="2018-10-12T14:01:23.000Z" itemprop="datePublished">2018-10-12</time>
     </div>
 
+
+      
 
       
     <div class="article-tag">
@@ -207,7 +213,12 @@ Bahamas                              5       0
 <ol start="8">
 <li>输出某一条件内元素的数</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">only_gold[<span class="string">'Gold'</span>].count()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">only_gold[<span class="string">'Gold'</span>].count()[<span class="number">0</span>]	<span class="comment">#注意[0]</span></span><br></pre></td></tr></table></figure>
+<ol start="9">
+<li>字典转DataFrame</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">stateCounts = &#123;&#125;</span><br><span class="line">dt = pd.DataFrame(data = stateCounts).T</span><br></pre></td></tr></table></figure>
+
   </div>
 </article>
 
@@ -224,6 +235,10 @@ Bahamas                              5       0
           <li><a href="/">Home</a></li>
          
           <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/categories">Categories</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
          
           <li><a href="/about/">About</a></li>
         
@@ -272,6 +287,10 @@ Bahamas                              5       0
           <li><a href="/">Home</a></li>
          
           <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/categories">Categories</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
          
           <li><a href="/about/">About</a></li>
         
