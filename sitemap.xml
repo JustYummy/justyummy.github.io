@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hijia.xin/2018/10/10/Something-about-pandas/</loc>
+    
+    <lastmod>2018-10-15T04:01:23.567Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hijia.xin/2018/10/15/Advanced-Python-Pandas/</loc>
     
-    <lastmod>2018-10-15T03:02:47.493Z</lastmod>
+    <lastmod>2018-10-15T03:59:47.815Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://hijia.xin/2018/10/10/Hexo-Scrolling-Table/</loc>
     
     <lastmod>2018-10-15T02:32:36.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hijia.xin/2018/10/10/Something-about-pandas/</loc>
-    
-    <lastmod>2018-10-15T02:26:21.921Z</lastmod>
     
   </url>
   

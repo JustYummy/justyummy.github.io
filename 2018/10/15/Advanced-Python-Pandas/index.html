@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Merging Dataframesimport pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter">
+    <meta name="description" content="合并Dataframe构建数据集 import pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter&apos;">
 <meta name="keywords" content="pandas,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Advanced Python Pandas">
 <meta property="og:url" content="http://hijia.xin/2018/10/15/Advanced-Python-Pandas/index.html">
 <meta property="og:site_name" content="Begin">
-<meta property="og:description" content="Merging Dataframesimport pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter">
+<meta property="og:description" content="合并Dataframe构建数据集 import pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter&apos;">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/JustYummy/website-picture-library/master/pandas/output_76_2.png">
-<meta property="og:updated_time" content="2018-10-15T03:02:47.493Z">
+<meta property="og:updated_time" content="2018-10-15T03:59:47.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Advanced Python Pandas">
-<meta name="twitter:description" content="Merging Dataframesimport pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter">
+<meta name="twitter:description" content="合并Dataframe构建数据集 import pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter&apos;">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/JustYummy/website-picture-library/master/pandas/output_76_2.png">
     
     
@@ -105,7 +105,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Merging-Dataframes"><span class="toc-number">1.</span> <span class="toc-text">Merging Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.0.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.0.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.0.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.0.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.0.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.0.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.0.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -154,7 +154,8 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="Merging-Dataframes"><a href="#Merging-Dataframes" class="headerlink" title="Merging Dataframes"></a>Merging Dataframes</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'Chris'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Sponge'</span>, <span class="string">'Cost'</span>: <span class="number">22.50</span>&#125;,</span><br><span class="line">                   &#123;<span class="string">'Name'</span>: <span class="string">'Kevyn'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Kitty Litter'</span>, <span class="string">'Cost'</span>: <span class="number">2.50</span>&#125;,</span><br><span class="line">                   &#123;<span class="string">'Name'</span>: <span class="string">'Filip'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Spoon'</span>, <span class="string">'Cost'</span>: <span class="number">5.00</span>&#125;],</span><br><span class="line">                  index=[<span class="string">'Store 1'</span>, <span class="string">'Store 1'</span>, <span class="string">'Store 2'</span>])</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+    <h2 id="合并Dataframe"><a href="#合并Dataframe" class="headerlink" title="合并Dataframe"></a>合并Dataframe</h2><p>构建数据集</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'Chris'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Sponge'</span>, <span class="string">'Cost'</span>: <span class="number">22.50</span>&#125;,</span><br><span class="line">                   &#123;<span class="string">'Name'</span>: <span class="string">'Kevyn'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Kitty Litter'</span>, <span class="string">'Cost'</span>: <span class="number">2.50</span>&#125;,</span><br><span class="line">                   &#123;<span class="string">'Name'</span>: <span class="string">'Filip'</span>, <span class="string">'Item Purchased'</span>: <span class="string">'Spoon'</span>, <span class="string">'Cost'</span>: <span class="number">5.00</span>&#125;],</span><br><span class="line">                  index=[<span class="string">'Store 1'</span>, <span class="string">'Store 1'</span>, <span class="string">'Store 2'</span>])</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -189,8 +190,7 @@
 </div>
 
 
-
-
+<p>新增日期</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Date'</span>] = [<span class="string">'December 1'</span>, <span class="string">'January 1'</span>, <span class="string">'mid-May'</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -230,8 +230,7 @@
 </div>
 
 
-
-
+<p>新增是否传递数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Delivered'</span>] = <span class="keyword">True</span></span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -275,8 +274,7 @@
 </div>
 
 
-
-
+<p>新增反馈状态</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Feedback'</span>] = [<span class="string">'Positive'</span>, <span class="keyword">None</span>, <span class="string">'Negative'</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -324,8 +322,7 @@
 </div>
 
 
-
-
+<p>利用reset_index重设索引</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">adf = df.reset_index()</span><br><span class="line">adf[<span class="string">'Date'</span>] = pd.Series(&#123;<span class="number">0</span>: <span class="string">'December 1'</span>, <span class="number">2</span>: <span class="string">'mid-May'</span>&#125;)</span><br><span class="line">adf</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -377,8 +374,7 @@
 </div>
 
 
-
-
+<p>新增连接测试数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">staff_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'Kelly'</span>, <span class="string">'Role'</span>: <span class="string">'Director of HR'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Role'</span>: <span class="string">'Course liasion'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'Role'</span>: <span class="string">'Grader'</span>&#125;])</span><br><span class="line">staff_df = staff_df.set_index(<span class="string">'Name'</span>)</span><br><span class="line">student_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'School'</span>: <span class="string">'Business'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Mike'</span>, <span class="string">'School'</span>: <span class="string">'Law'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'School'</span>: <span class="string">'Engineering'</span>&#125;])</span><br><span class="line">student_df = student_df.set_index(<span class="string">'Name'</span>)</span><br><span class="line">print(staff_df.head())</span><br><span class="line">print()</span><br><span class="line">print(student_df.head())</span><br></pre></td></tr></table></figure>
 <pre><code>                 Role
 Name                 
@@ -391,7 +387,11 @@ Name
 James     Business
 Mike           Law
 Sally  Engineering
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'outer'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="外链接"><a href="#外链接" class="headerlink" title="外链接"></a>外链接</h3><p><strong>说明</strong>：</p>
+<p>how= 为链接方法有：outer，inner，left，right</p>
+<p>left_index=True, right_index=True 是指利用左右索引当作参考值</p>
+<p>left_on=’Name’, right_on=’Name’ 是指利用左右数据名称进行匹配</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'outer'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -432,9 +432,7 @@ Sally  Engineering
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'inner'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="内链接"><a href="#内链接" class="headerlink" title="内链接"></a>内链接</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'inner'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -465,9 +463,7 @@ Sally  Engineering
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'left'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="左链接"><a href="#左链接" class="headerlink" title="左链接"></a>左链接</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'left'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -503,9 +499,7 @@ Sally  Engineering
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'right'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="右链接"><a href="#右链接" class="headerlink" title="右链接"></a>右链接</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'right'</span>, left_index=<span class="keyword">True</span>, right_index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -578,9 +572,7 @@ Sally  Engineering
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">staff_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'Kelly'</span>, <span class="string">'Role'</span>: <span class="string">'Director of HR'</span>, <span class="string">'Location'</span>: <span class="string">'State Street'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Role'</span>: <span class="string">'Course liasion'</span>, <span class="string">'Location'</span>: <span class="string">'Washington Avenue'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'Role'</span>: <span class="string">'Grader'</span>, <span class="string">'Location'</span>: <span class="string">'Washington Avenue'</span>&#125;])</span><br><span class="line">student_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'School'</span>: <span class="string">'Business'</span>, <span class="string">'Location'</span>: <span class="string">'1024 Billiard Avenue'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Mike'</span>, <span class="string">'School'</span>: <span class="string">'Law'</span>, <span class="string">'Location'</span>: <span class="string">'Fraternity House #22'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'School'</span>: <span class="string">'Engineering'</span>, <span class="string">'Location'</span>: <span class="string">'512 Wilson Crescent'</span>&#125;])</span><br><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'left'</span>, left_on=<span class="string">'Name'</span>, right_on=<span class="string">'Name'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="利用单个数据名链接"><a href="#利用单个数据名链接" class="headerlink" title="利用单个数据名链接"></a>利用单个数据名链接</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">staff_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'Kelly'</span>, <span class="string">'Role'</span>: <span class="string">'Director of HR'</span>, <span class="string">'Location'</span>: <span class="string">'State Street'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Role'</span>: <span class="string">'Course liasion'</span>, <span class="string">'Location'</span>: <span class="string">'Washington Avenue'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'Role'</span>: <span class="string">'Grader'</span>, <span class="string">'Location'</span>: <span class="string">'Washington Avenue'</span>&#125;])</span><br><span class="line">student_df = pd.DataFrame([&#123;<span class="string">'Name'</span>: <span class="string">'James'</span>, <span class="string">'School'</span>: <span class="string">'Business'</span>, <span class="string">'Location'</span>: <span class="string">'1024 Billiard Avenue'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Mike'</span>, <span class="string">'School'</span>: <span class="string">'Law'</span>, <span class="string">'Location'</span>: <span class="string">'Fraternity House #22'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'Name'</span>: <span class="string">'Sally'</span>, <span class="string">'School'</span>: <span class="string">'Engineering'</span>, <span class="string">'Location'</span>: <span class="string">'512 Wilson Crescent'</span>&#125;])</span><br><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'left'</span>, left_on=<span class="string">'Name'</span>, right_on=<span class="string">'Name'</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -623,9 +615,7 @@ Sally  Engineering
 </div>
 
 
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">staff_df = pd.DataFrame([&#123;<span class="string">'First Name'</span>: <span class="string">'Kelly'</span>, <span class="string">'Last Name'</span>: <span class="string">'Desjardins'</span>, <span class="string">'Role'</span>: <span class="string">'Director of HR'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'First Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Last Name'</span>: <span class="string">'Brooks'</span>, <span class="string">'Role'</span>: <span class="string">'Course liasion'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'First Name'</span>: <span class="string">'James'</span>, <span class="string">'Last Name'</span>: <span class="string">'Wilde'</span>, <span class="string">'Role'</span>: <span class="string">'Grader'</span>&#125;])</span><br><span class="line">student_df = pd.DataFrame([&#123;<span class="string">'First Name'</span>: <span class="string">'James'</span>, <span class="string">'Last Name'</span>: <span class="string">'Hammond'</span>, <span class="string">'School'</span>: <span class="string">'Business'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'First Name'</span>: <span class="string">'Mike'</span>, <span class="string">'Last Name'</span>: <span class="string">'Smith'</span>, <span class="string">'School'</span>: <span class="string">'Law'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'First Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Last Name'</span>: <span class="string">'Brooks'</span>, <span class="string">'School'</span>: <span class="string">'Engineering'</span>&#125;])</span><br><span class="line">print(staff_df)</span><br><span class="line">print(student_df)</span><br><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'inner'</span>, left_on=[<span class="string">'First Name'</span>,<span class="string">'Last Name'</span>], right_on=[<span class="string">'First Name'</span>,<span class="string">'Last Name'</span>])</span><br></pre></td></tr></table></figure>
+<h3 id="利用多个数据名链接"><a href="#利用多个数据名链接" class="headerlink" title="利用多个数据名链接"></a>利用多个数据名链接</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">staff_df = pd.DataFrame([&#123;<span class="string">'First Name'</span>: <span class="string">'Kelly'</span>, <span class="string">'Last Name'</span>: <span class="string">'Desjardins'</span>, <span class="string">'Role'</span>: <span class="string">'Director of HR'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'First Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Last Name'</span>: <span class="string">'Brooks'</span>, <span class="string">'Role'</span>: <span class="string">'Course liasion'</span>&#125;,</span><br><span class="line">                         &#123;<span class="string">'First Name'</span>: <span class="string">'James'</span>, <span class="string">'Last Name'</span>: <span class="string">'Wilde'</span>, <span class="string">'Role'</span>: <span class="string">'Grader'</span>&#125;])</span><br><span class="line">student_df = pd.DataFrame([&#123;<span class="string">'First Name'</span>: <span class="string">'James'</span>, <span class="string">'Last Name'</span>: <span class="string">'Hammond'</span>, <span class="string">'School'</span>: <span class="string">'Business'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'First Name'</span>: <span class="string">'Mike'</span>, <span class="string">'Last Name'</span>: <span class="string">'Smith'</span>, <span class="string">'School'</span>: <span class="string">'Law'</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">'First Name'</span>: <span class="string">'Sally'</span>, <span class="string">'Last Name'</span>: <span class="string">'Brooks'</span>, <span class="string">'School'</span>: <span class="string">'Engineering'</span>&#125;])</span><br><span class="line">print(staff_df)</span><br><span class="line">print(student_df)</span><br><span class="line">pd.merge(staff_df, student_df, how=<span class="string">'inner'</span>, left_on=[<span class="string">'First Name'</span>,<span class="string">'Last Name'</span>], right_on=[<span class="string">'First Name'</span>,<span class="string">'Last Name'</span>])	<span class="comment">#多个数据名</span></span><br></pre></td></tr></table></figure>
 <pre><code>  First Name   Last Name            Role
 0      Kelly  Desjardins  Director of HR
 1      Sally      Brooks  Course liasion
@@ -659,7 +649,7 @@ Sally  Engineering
 
 
 
-<h1 id="Idiomatic-Pandas-Making-Code-Pandorable"><a href="#Idiomatic-Pandas-Making-Code-Pandorable" class="headerlink" title="Idiomatic Pandas: Making Code Pandorable"></a>Idiomatic Pandas: Making Code Pandorable</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="Idiomatic-Pandas-Making-Code-Pandorable"><a href="#Idiomatic-Pandas-Making-Code-Pandorable" class="headerlink" title="Idiomatic Pandas: Making Code Pandorable"></a>Idiomatic Pandas: Making Code Pandorable</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -7167,7 +7157,7 @@ dtype: float64
 
 
 
-<h1 id="Group-by"><a href="#Group-by" class="headerlink" title="Group by"></a>Group by</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="Group-by"><a href="#Group-by" class="headerlink" title="Group by"></a>Group by</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -10091,7 +10081,7 @@ There are 831 records in group 2 for processing.
 
 
 
-<h1 id="Scales"><a href="#Scales" class="headerlink" title="Scales"></a>Scales</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.DataFrame([<span class="string">'A+'</span>, <span class="string">'A'</span>, <span class="string">'A-'</span>, <span class="string">'B+'</span>, <span class="string">'B'</span>, <span class="string">'B-'</span>, <span class="string">'C+'</span>, <span class="string">'C'</span>, <span class="string">'C-'</span>, <span class="string">'D+'</span>, <span class="string">'D'</span>],</span><br><span class="line">                  index=[<span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'poor'</span>, <span class="string">'poor'</span>])</span><br><span class="line">df.rename(columns=&#123;<span class="number">0</span>: <span class="string">'Grades'</span>&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="Scales"><a href="#Scales" class="headerlink" title="Scales"></a>Scales</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.DataFrame([<span class="string">'A+'</span>, <span class="string">'A'</span>, <span class="string">'A-'</span>, <span class="string">'B+'</span>, <span class="string">'B'</span>, <span class="string">'B-'</span>, <span class="string">'C+'</span>, <span class="string">'C'</span>, <span class="string">'C-'</span>, <span class="string">'D+'</span>, <span class="string">'D'</span>],</span><br><span class="line">                  index=[<span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'poor'</span>, <span class="string">'poor'</span>])</span><br><span class="line">df.rename(columns=&#123;<span class="number">0</span>: <span class="string">'Grades'</span>&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -10243,7 +10233,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 
 
 
-<h1 id="Pivot-Tables"><a href="#Pivot-Tables" class="headerlink" title="Pivot Tables"></a>Pivot Tables</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#http://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64</span></span><br><span class="line">df = pd.read_csv(<span class="string">'cars.csv'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Pivot-Tables"><a href="#Pivot-Tables" class="headerlink" title="Pivot Tables"></a>Pivot Tables</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#http://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64</span></span><br><span class="line">df = pd.read_csv(<span class="string">'cars.csv'</span>)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -10652,7 +10642,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 
 
 
-<h1 id="Date-Functionality-in-Pandas"><a href="#Date-Functionality-in-Pandas" class="headerlink" title="Date Functionality in Pandas"></a>Date Functionality in Pandas</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+<h2 id="Date-Functionality-in-Pandas"><a href="#Date-Functionality-in-Pandas" class="headerlink" title="Date Functionality in Pandas"></a>Date Functionality in Pandas</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
 <h3 id="Timestamp"><a href="#Timestamp" class="headerlink" title="Timestamp"></a>Timestamp</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.Timestamp(<span class="string">'9/1/2016 10:05AM'</span>)</span><br></pre></td></tr></table></figure>
 <pre><code>Timestamp(&apos;2016-09-01 10:05:00&apos;)
 </code></pre><h3 id="Period"><a href="#Period" class="headerlink" title="Period"></a>Period</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.Period(<span class="string">'1/2016'</span>)</span><br></pre></td></tr></table></figure>
@@ -11164,7 +11154,7 @@ Freq: M, dtype: object
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Merging-Dataframes"><span class="toc-number">1.</span> <span class="toc-text">Merging Dataframes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.0.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.0.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.0.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.0.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.0.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.0.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.0.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
