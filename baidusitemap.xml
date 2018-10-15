@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://hijia.xin/2018/10/15/Advanced-Python-Pandas/</loc>
+    <lastmod>2018-10-15T03:02:47.493Z</lastmod>
+  </url>  <url>
+    <loc>http://hijia.xin/2018/10/10/Hexo-Scrolling-Table/</loc>
+    <lastmod>2018-10-15T02:32:36.145Z</lastmod>
+  </url>  <url>
+    <loc>http://hijia.xin/2018/10/10/Something-about-pandas/</loc>
+    <lastmod>2018-10-15T02:26:21.921Z</lastmod>
+  </url>  <url>
     <loc>http://hijia.xin/2018/08/17/Begin/</loc>
     <lastmod>2018-10-13T07:24:27.303Z</lastmod>
   </url>  <url>
     <loc>http://hijia.xin/2018/10/12/Key-Point-on-DataFrame/</loc>
     <lastmod>2018-10-13T06:03:01.010Z</lastmod>
   </url>  <url>
-    <loc>http://hijia.xin/2018/10/10/Hexo-Scrolling-Table/</loc>
-    <lastmod>2018-10-13T06:02:49.632Z</lastmod>
-  </url>  <url>
     <loc>http://hijia.xin/2018/10/07/Word-Power-Made-Easy-part-6/</loc>
     <lastmod>2018-10-13T06:02:38.249Z</lastmod>
   </url>  <url>
     <loc>http://hijia.xin/2018/09/23/Word-Power-Made-Easy-part-5/</loc>
     <lastmod>2018-10-13T06:02:32.801Z</lastmod>
-  </url>  <url>
-    <loc>http://hijia.xin/2018/10/10/Something-about-pandas/</loc>
-    <lastmod>2018-10-13T06:02:21.424Z</lastmod>
   </url>  <url>
     <loc>http://hijia.xin/2018/10/09/Numpy-notebook/</loc>
     <lastmod>2018-10-13T06:02:05.799Z</lastmod>
