@@ -15,7 +15,7 @@
 <meta property="og:description" content="合并Dataframe构建数据集 import pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter&apos;">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/JustYummy/website-picture-library/master/pandas/output_76_2.png">
-<meta property="og:updated_time" content="2018-10-15T03:59:47.815Z">
+<meta property="og:updated_time" content="2018-10-16T03:45:33.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Advanced Python Pandas">
 <meta name="twitter:description" content="合并Dataframe构建数据集 import pandas as pddf = pd.DataFrame([&amp;#123;&apos;Name&apos;: &apos;Chris&apos;, &apos;Item Purchased&apos;: &apos;Sponge&apos;, &apos;Cost&apos;: 22.50&amp;#125;,                   &amp;#123;&apos;Name&apos;: &apos;Kevyn&apos;, &apos;Item Purchased&apos;: &apos;Kitty Litter&apos;">
@@ -105,7 +105,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通顺的Pandas"><span class="toc-number">2.</span> <span class="toc-text">通顺的Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用apply修改元素"><span class="toc-number">2.1.</span> <span class="toc-text">使用apply修改元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分类"><span class="toc-number">3.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尺度"><span class="toc-number">4.</span> <span class="toc-text">尺度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用astype分类"><span class="toc-number">4.1.</span> <span class="toc-text">使用astype分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用ordered进行顺序排列"><span class="toc-number">4.2.</span> <span class="toc-text">使用ordered进行顺序排列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用cut进行分块"><span class="toc-number">4.3.</span> <span class="toc-text">使用cut进行分块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#枢纽分析表"><span class="toc-number">4.4.</span> <span class="toc-text">枢纽分析表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pivot-table"><span class="toc-number">4.5.</span> <span class="toc-text">pivot_table</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pandas中的日期"><span class="toc-number">5.</span> <span class="toc-text">Pandas中的日期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">5.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">5.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">5.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">5.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">5.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">5.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">5.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -649,7 +649,7 @@ Sally  Engineering
 
 
 
-<h2 id="Idiomatic-Pandas-Making-Code-Pandorable"><a href="#Idiomatic-Pandas-Making-Code-Pandorable" class="headerlink" title="Idiomatic Pandas: Making Code Pandorable"></a>Idiomatic Pandas: Making Code Pandorable</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="通顺的Pandas"><a href="#通顺的Pandas" class="headerlink" title="通顺的Pandas"></a>通顺的Pandas</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -5218,7 +5218,7 @@ Sally  Engineering
 
 
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">min_max</span><span class="params">(row)</span>:</span></span><br><span class="line">    data = row[[<span class="string">'POPESTIMATE2010'</span>,</span><br><span class="line">                <span class="string">'POPESTIMATE2011'</span>,</span><br><span class="line">                <span class="string">'POPESTIMATE2012'</span>,</span><br><span class="line">                <span class="string">'POPESTIMATE2013'</span>,</span><br><span class="line">                <span class="string">'POPESTIMATE2014'</span>,</span><br><span class="line">                <span class="string">'POPESTIMATE2015'</span>]]</span><br><span class="line">    <span class="keyword">return</span> pd.Series(&#123;<span class="string">'min'</span>: np.min(data), <span class="string">'max'</span>: np.max(data)&#125;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.apply(min_max, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="使用apply修改元素"><a href="#使用apply修改元素" class="headerlink" title="使用apply修改元素"></a>使用apply修改元素</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.apply(min_max, axis=<span class="number">1</span>)	<span class="comment">#0为一行，1为一列。要遍历所有行使用1</span></span><br></pre></td></tr></table></figure>
 <div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -7157,7 +7157,7 @@ dtype: float64
 
 
 
-<h2 id="Group-by"><a href="#Group-by" class="headerlink" title="Group by"></a>Group by</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="height:500px;width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -10081,7 +10081,7 @@ There are 831 records in group 2 for processing.
 
 
 
-<h2 id="Scales"><a href="#Scales" class="headerlink" title="Scales"></a>Scales</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.DataFrame([<span class="string">'A+'</span>, <span class="string">'A'</span>, <span class="string">'A-'</span>, <span class="string">'B+'</span>, <span class="string">'B'</span>, <span class="string">'B-'</span>, <span class="string">'C+'</span>, <span class="string">'C'</span>, <span class="string">'C-'</span>, <span class="string">'D+'</span>, <span class="string">'D'</span>],</span><br><span class="line">                  index=[<span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'poor'</span>, <span class="string">'poor'</span>])</span><br><span class="line">df.rename(columns=&#123;<span class="number">0</span>: <span class="string">'Grades'</span>&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h2 id="尺度"><a href="#尺度" class="headerlink" title="尺度"></a>尺度</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.DataFrame([<span class="string">'A+'</span>, <span class="string">'A'</span>, <span class="string">'A-'</span>, <span class="string">'B+'</span>, <span class="string">'B'</span>, <span class="string">'B-'</span>, <span class="string">'C+'</span>, <span class="string">'C'</span>, <span class="string">'C-'</span>, <span class="string">'D+'</span>, <span class="string">'D'</span>],</span><br><span class="line">                  index=[<span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'excellent'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'good'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'ok'</span>, <span class="string">'poor'</span>, <span class="string">'poor'</span>])</span><br><span class="line">df.rename(columns=&#123;<span class="number">0</span>: <span class="string">'Grades'</span>&#125;, inplace=<span class="keyword">True</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
   <thead>
@@ -10139,27 +10139,33 @@ There are 831 records in group 2 for processing.
 </table>
 </div>
 
-
-
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Grades'</span>].astype(<span class="string">'category'</span>).head()</span><br></pre></td></tr></table></figure>
-<pre><code>excellent    A+
+<h3 id="使用astype分类"><a href="#使用astype分类" class="headerlink" title="使用astype分类"></a>使用astype分类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">'Grades'</span>].astype(<span class="string">'category'</span>).head()</span><br></pre></td></tr></table></figure>
+<pre><code>
+excellent    A+
 excellent     A
 excellent    A-
 good         B+
 good          B
 Name: Grades, dtype: category
 Categories (11, object): [A, A+, A-, B, ..., C+, C-, D, D+]
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">grades = df[<span class="string">'Grades'</span>].astype(<span class="string">'category'</span>,</span><br><span class="line">                             categories=[<span class="string">'D'</span>, <span class="string">'D+'</span>, <span class="string">'C-'</span>, <span class="string">'C'</span>, <span class="string">'C+'</span>, <span class="string">'B-'</span>, <span class="string">'B'</span>, <span class="string">'B+'</span>, <span class="string">'A-'</span>, <span class="string">'A'</span>, <span class="string">'A+'</span>],</span><br><span class="line">                             ordered=<span class="keyword">True</span>)</span><br><span class="line">grades.head()</span><br></pre></td></tr></table></figure>
-<pre><code>excellent    A+
+</code></pre>
+
+<h3 id="使用ordered进行顺序排列"><a href="#使用ordered进行顺序排列" class="headerlink" title="使用ordered进行顺序排列"></a>使用ordered进行顺序排列</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">grades = df[<span class="string">'Grades'</span>].astype(<span class="string">'category'</span>,</span><br><span class="line">                             categories=[<span class="string">'D'</span>, <span class="string">'D+'</span>, <span class="string">'C-'</span>, <span class="string">'C'</span>, <span class="string">'C+'</span>, <span class="string">'B-'</span>, <span class="string">'B'</span>, <span class="string">'B+'</span>, <span class="string">'A-'</span>, <span class="string">'A'</span>, <span class="string">'A+'</span>],</span><br><span class="line">                             ordered=<span class="keyword">True</span>)</span><br><span class="line">grades.head()</span><br></pre></td></tr></table></figure>
+<pre><code>
+excellent    A+
 excellent     A
 excellent    A-
 good         B+
 good          B
 Name: Grades, dtype: category
-Categories (11, object): [D &lt; D+ &lt; C- &lt; C ... B+ &lt; A- &lt; A &lt; A+]
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">grades &gt; <span class="string">'C'</span></span><br></pre></td></tr></table></figure>
-<pre><code>excellent     True
+Categories (11, object): [D < D+ < C- < C ... B+ < A- < A < A+]
+</code></pre>
+
+
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">grades &gt; <span class="string">'C'</span></span><br></pre></td></tr></table></figure>
+<pre><code>
+excellent     True
 excellent     True
 excellent     True
 good          True
@@ -10171,7 +10177,9 @@ ok           False
 poor         False
 poor         False
 Name: Grades, dtype: bool
-</code></pre><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df = df.set_index(<span class="string">'STNAME'</span>).groupby(level=<span class="number">0</span>)[<span class="string">'CENSUS2010POP'</span>].agg(&#123;<span class="string">'avg'</span>: np.average&#125;)</span><br><span class="line">pd.cut(df[<span class="string">'avg'</span>],<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+</code></pre>
+
+<h3 id="使用cut进行分块"><a href="#使用cut进行分块" class="headerlink" title="使用cut进行分块"></a>使用cut进行分块</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">'census.csv'</span>)</span><br><span class="line">df = df[df[<span class="string">'SUMLEV'</span>]==<span class="number">50</span>]</span><br><span class="line">df = df.set_index(<span class="string">'STNAME'</span>).groupby(level=<span class="number">0</span>)[<span class="string">'CENSUS2010POP'</span>].agg(&#123;<span class="string">'avg'</span>: np.average&#125;)</span><br><span class="line">pd.cut(df[<span class="string">'avg'</span>],<span class="number">10</span>)	<span class="comment">#分成10个类别</span></span><br></pre></td></tr></table></figure>
 <pre style="height:500px;overflow:auto">
 <code>
 STNAME
@@ -10232,8 +10240,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 </pre>
 
 
-
-<h2 id="Pivot-Tables"><a href="#Pivot-Tables" class="headerlink" title="Pivot Tables"></a>Pivot Tables</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#http://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64</span></span><br><span class="line">df = pd.read_csv(<span class="string">'cars.csv'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="枢纽分析表"><a href="#枢纽分析表" class="headerlink" title="枢纽分析表"></a>枢纽分析表</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#http://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64</span></span><br><span class="line">df = pd.read_csv(<span class="string">'cars.csv'</span>)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.head()</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -10365,8 +10372,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 </div>
 
 
-
-
+<h3 id="pivot-table"><a href="#pivot-table" class="headerlink" title="pivot_table"></a>pivot_table</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.pivot_table(df, index=[<span class="string">'YEAR'</span>,<span class="string">'Make'</span>])</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.pivot_table(values=<span class="string">'(kW)'</span>, index=<span class="string">'YEAR'</span>, columns=<span class="string">'Make'</span>, aggfunc=np.mean)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -10455,8 +10461,6 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 </div>
 
 
-
-
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df.pivot_table(values=<span class="string">'(kW)'</span>, index=<span class="string">'YEAR'</span>, columns=<span class="string">'Make'</span>, aggfunc=[np.mean,np.min], margins=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <div style="width:device-width;overflow:auto">
 <table border="1" class="dataframe">
@@ -10464,7 +10468,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
     <tr>
       <th></th>
       <th colspan="9" halign="left">mean</th>
-      <th colspan="9" halign="left">amin</th>
+      <th colspan="9" halign="left">min</th>
     </tr>
     <tr>
       <th>Make</th>
@@ -10642,7 +10646,7 @@ Categories (10, object): [(11706.0871, 75333.413] < (75333.413, 138330.766] < (1
 
 
 
-<h2 id="Date-Functionality-in-Pandas"><a href="#Date-Functionality-in-Pandas" class="headerlink" title="Date Functionality in Pandas"></a>Date Functionality in Pandas</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+<h2 id="Pandas中的日期"><a href="#Pandas中的日期" class="headerlink" title="Pandas中的日期"></a>Pandas中的日期</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
 <h3 id="Timestamp"><a href="#Timestamp" class="headerlink" title="Timestamp"></a>Timestamp</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.Timestamp(<span class="string">'9/1/2016 10:05AM'</span>)</span><br></pre></td></tr></table></figure>
 <pre><code>Timestamp(&apos;2016-09-01 10:05:00&apos;)
 </code></pre><h3 id="Period"><a href="#Period" class="headerlink" title="Period"></a>Period</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pd.Period(<span class="string">'1/2016'</span>)</span><br></pre></td></tr></table></figure>
@@ -11154,7 +11158,7 @@ Freq: M, dtype: object
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Idiomatic-Pandas-Making-Code-Pandorable"><span class="toc-number">2.</span> <span class="toc-text">Idiomatic Pandas: Making Code Pandorable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Group-by"><span class="toc-number">3.</span> <span class="toc-text">Group by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scales"><span class="toc-number">4.</span> <span class="toc-text">Scales</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pivot-Tables"><span class="toc-number">5.</span> <span class="toc-text">Pivot Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-Functionality-in-Pandas"><span class="toc-number">6.</span> <span class="toc-text">Date Functionality in Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">6.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">6.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">6.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">6.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">6.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">6.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">6.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并Dataframe"><span class="toc-number">1.</span> <span class="toc-text">合并Dataframe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外链接"><span class="toc-number">1.1.</span> <span class="toc-text">外链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内链接"><span class="toc-number">1.2.</span> <span class="toc-text">内链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#左链接"><span class="toc-number">1.3.</span> <span class="toc-text">左链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#右链接"><span class="toc-number">1.4.</span> <span class="toc-text">右链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用单个数据名链接"><span class="toc-number">1.5.</span> <span class="toc-text">利用单个数据名链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用多个数据名链接"><span class="toc-number">1.6.</span> <span class="toc-text">利用多个数据名链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通顺的Pandas"><span class="toc-number">2.</span> <span class="toc-text">通顺的Pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用apply修改元素"><span class="toc-number">2.1.</span> <span class="toc-text">使用apply修改元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分类"><span class="toc-number">3.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尺度"><span class="toc-number">4.</span> <span class="toc-text">尺度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用astype分类"><span class="toc-number">4.1.</span> <span class="toc-text">使用astype分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用ordered进行顺序排列"><span class="toc-number">4.2.</span> <span class="toc-text">使用ordered进行顺序排列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用cut进行分块"><span class="toc-number">4.3.</span> <span class="toc-text">使用cut进行分块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#枢纽分析表"><span class="toc-number">4.4.</span> <span class="toc-text">枢纽分析表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pivot-table"><span class="toc-number">4.5.</span> <span class="toc-text">pivot_table</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pandas中的日期"><span class="toc-number">5.</span> <span class="toc-text">Pandas中的日期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timestamp"><span class="toc-number">5.1.</span> <span class="toc-text">Timestamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Period"><span class="toc-number">5.2.</span> <span class="toc-text">Period</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DatetimeIndex"><span class="toc-number">5.3.</span> <span class="toc-text">DatetimeIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PeriodIndex"><span class="toc-number">5.4.</span> <span class="toc-text">PeriodIndex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-to-Datetime"><span class="toc-number">5.5.</span> <span class="toc-text">Converting to Datetime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Timedeltas"><span class="toc-number">5.6.</span> <span class="toc-text">Timedeltas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Dates-in-a-Dataframe"><span class="toc-number">5.7.</span> <span class="toc-text">Working with Dates in a Dataframe</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
