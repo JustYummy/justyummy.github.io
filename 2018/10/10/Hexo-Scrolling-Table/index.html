@@ -115,22 +115,541 @@
         
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
+<a href="/">
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Hexo Scrolling Table
+    </h1>
 
+
+
+</a>
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
+        <span itemprop="name">Begin</span>
       </span>
-      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
-      <%- partial('_partial/post/tag') %>
+      
+    <div class="postdate">
+        <time datetime="2018-10-10T01:58:48.000Z" itemprop="datePublished">2018-10-10</time>
     </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Hexo/">Hexo</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+    </div>
+
+
+    </div>
+
   </header>
-  <%- partial('_partial/post/gallery') %>
+  
+
   <div class="content" itemprop="articleBody">
-    <%- page.content %>
+    <p>Some times we put some tables on the web, It may wider than the screen width, it will cause webpage unstable.</p>
+<p>If you use HTML code it maybe like this:</p>
+<div>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th># Summer</th>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Bronze</th>
+        <th>Total</th>
+        <th># Winter</th>
+        <th>Gold.1</th>
+        <th>Silver.1</th>
+        <th>Bronze.1</th>
+        <th>Total.1</th>
+        <th># Games</th>
+        <th>Gold.2</th>
+        <th>Silver.2</th>
+        <th>Bronze.2</th>
+        <th>Combined total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Afghanistan (AFG)</th>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+      </tr>
+      <tr>
+        <th>Algeria (ALG)</th>
+        <td>12.0</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>8.0</td>
+        <td>15.0</td>
+        <td>3.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>15.0</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>8.0</td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <th>Argentina (ARG)</th>
+        <td>23.0</td>
+        <td>18.0</td>
+        <td>24.0</td>
+        <td>28.0</td>
+        <td>70.0</td>
+        <td>18.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>41.0</td>
+        <td>18.0</td>
+        <td>24.0</td>
+        <td>28.0</td>
+        <td>70.0</td>
+      </tr>
+      <tr>
+        <th>Armenia (ARM)</th>
+        <td>5.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>9.0</td>
+        <td>12.0</td>
+        <td>6.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>11.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>9.0</td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <th>Australasia (ANZ) [ANZ]</th>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>12.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>12.0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>or when you use Markdown it may like this:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong># Summer</strong></th>
+<th><strong>Gold</strong></th>
+<th><strong>Silver</strong></th>
+<th><strong>Bronze</strong></th>
+<th><strong>Total</strong></th>
+<th><strong># Winter</strong></th>
+<th><strong>Gold.1</strong></th>
+<th><strong>Silver.1</strong></th>
+<th><strong>Bronze.1</strong></th>
+<th><strong>Total.1</strong></th>
+<th><strong># Games</strong></th>
+<th><strong>Gold.2</strong></th>
+<th><strong>Silver.2</strong></th>
+<th><strong>Bronze.2</strong></th>
+<th>Combined total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Afghanistan (AFG)</strong></td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td><strong>Algeria (ALG)</strong></td>
+<td>12.0</td>
+<td>5.0</td>
+<td>2.0</td>
+<td>8.0</td>
+<td>15.0</td>
+<td>3.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>15.0</td>
+<td>5.0</td>
+<td>2.0</td>
+<td>8.0</td>
+<td>15.0</td>
+</tr>
+<tr>
+<td><strong>Argentina (ARG)</strong></td>
+<td>23.0</td>
+<td>18.0</td>
+<td>24.0</td>
+<td>28.0</td>
+<td>70.0</td>
+<td>18.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>41.0</td>
+<td>18.0</td>
+<td>24.0</td>
+<td>28.0</td>
+<td>70.0</td>
+</tr>
+<tr>
+<td><strong>Armenia (ARM)</strong></td>
+<td>5.0</td>
+<td>1.0</td>
+<td>2.0</td>
+<td>9.0</td>
+<td>12.0</td>
+<td>6.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>11.0</td>
+<td>1.0</td>
+<td>2.0</td>
+<td>9.0</td>
+<td>12.0</td>
+</tr>
+<tr>
+<td><strong>Australasia (ANZ) [ANZ]</strong></td>
+<td>2.0</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>12.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2.0</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>12.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="So-What-should-we-do-to-create-a-scrollable-table"><a href="#So-What-should-we-do-to-create-a-scrollable-table" class="headerlink" title="So What should we do to create a scrollable table?"></a>So What should we do to create a scrollable table?</h3><p>It’s easy make some change to the HTML code, add the style to the <code>div</code>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>You set the <code>width</code> with device-width and <code>overflow</code> with auto
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;width:device-width;overflow:auto&quot;&gt;</span><br><span class="line">## also you can add &quot;height&quot; if the columns are to much: height:500px;</span><br></pre></td></tr></table></figure></p>
+<p>after that you will see:</p>
+<div style="width:device-width;overflow:auto">
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th># Summer</th>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Bronze</th>
+        <th>Total</th>
+        <th># Winter</th>
+        <th>Gold.1</th>
+        <th>Silver.1</th>
+        <th>Bronze.1</th>
+        <th>Total.1</th>
+        <th># Games</th>
+        <th>Gold.2</th>
+        <th>Silver.2</th>
+        <th>Bronze.2</th>
+        <th>Combined total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Afghanistan (AFG)</th>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+        <td>NaN</td>
+      </tr>
+      <tr>
+        <th>Algeria (ALG)</th>
+        <td>12.0</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>8.0</td>
+        <td>15.0</td>
+        <td>3.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>15.0</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>8.0</td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <th>Argentina (ARG)</th>
+        <td>23.0</td>
+        <td>18.0</td>
+        <td>24.0</td>
+        <td>28.0</td>
+        <td>70.0</td>
+        <td>18.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>41.0</td>
+        <td>18.0</td>
+        <td>24.0</td>
+        <td>28.0</td>
+        <td>70.0</td>
+      </tr>
+      <tr>
+        <th>Armenia (ARM)</th>
+        <td>5.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>9.0</td>
+        <td>12.0</td>
+        <td>6.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>11.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>9.0</td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <th>Australasia (ANZ) [ANZ]</th>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>12.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>12.0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<p>Also, If you want to do some change to this:</p>
+<pre><code>
+Afghanistan (AFG)                               False
+Algeria (ALG)                                    True
+Argentina (ARG)                                  True
+Armenia (ARM)                                    True
+Australasia (ANZ) [ANZ]                          True
+Australia (AUS) [AUS] [Z]                        True
+Austria (AUT)                                    True
+Azerbaijan (AZE)                                 True
+Bahamas (BAH)                                    True
+Bahrain (BRN)                                   False
+Barbados (BAR) [BAR]                            False
+Belarus (BLR)                                    True
+Belgium (BEL)                                    True
+Bermuda (BER)                                   False
+Bohemia (BOH) [BOH] [Z]                         False
+Botswana (BOT)                                  False
+Brazil (BRA)                                     True
+British West Indies (BWI) [BWI]                 False
+Bulgaria (BUL) [H]                               True
+Burundi (BDI)                                    True
+Cameroon (CMR)                                   True
+Canada (CAN)                                     True
+Chile (CHI) [I]                                  True
+China (CHN) [CHN]                                True
+Colombia (COL)                                   True
+Costa Rica (CRC)                                 True
+Ivory Coast (CIV) [CIV]                         False
+Croatia (CRO)                                    True
+Cuba (CUB) [Z]                                   True
+Cyprus (CYP)                                    False
+                                                ...  
+Sri Lanka (SRI) [SRI]                           False
+Sudan (SUD)                                     False
+Suriname (SUR) [E]                               True
+Sweden (SWE) [Z]                                 True
+Switzerland (SUI)                                True
+Syria (SYR)                                      True
+Chinese Taipei (TPE) [TPE] [TPE2]                True
+Tajikistan (TJK)                                False
+Tanzania (TAN) [TAN]                            False
+Thailand (THA)                                   True
+Togo (TOG)                                      False
+Tonga (TGA)                                     False
+Trinidad and Tobago (TRI) [TRI]                  True
+Tunisia (TUN)                                    True
+Turkey (TUR)                                     True
+Uganda (UGA)                                     True
+Ukraine (UKR)                                    True
+United Arab Emirates (UAE)                       True
+United States (USA) [P] [Q] [R] [Z]              True
+Uruguay (URU)                                    True
+Uzbekistan (UZB)                                 True
+Venezuela (VEN)                                  True
+Vietnam (VIE)                                   False
+Virgin Islands (ISV)                            False
+Yugoslavia (YUG) [YUG]                           True
+Independent Olympic Participants (IOP) [IOP]    False
+Zambia (ZAM) [ZAM]                              False
+Zimbabwe (ZIM) [ZIM]                             True
+Mixed team (ZZX) [ZZX]                           True
+Totals                                           True
+Name: Gold, dtype: bool
+</code>
+</pre>
+
+<p>You can do it by adding the style</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">style=&quot;height:500px;width:device-width;overflow:auto&quot;</span><br></pre></td></tr></table></figure>
+<p>So, there is the final result:</p>
+<pre style="height:500px;width:device-width;overflow:auto"><code>
+Afghanistan (AFG)                               False
+Algeria (ALG)                                    True
+Argentina (ARG)                                  True
+Armenia (ARM)                                    True
+Australasia (ANZ) [ANZ]                          True
+Australia (AUS) [AUS] [Z]                        True
+Austria (AUT)                                    True
+Azerbaijan (AZE)                                 True
+Bahamas (BAH)                                    True
+Bahrain (BRN)                                   False
+Barbados (BAR) [BAR]                            False
+Belarus (BLR)                                    True
+Belgium (BEL)                                    True
+Bermuda (BER)                                   False
+Bohemia (BOH) [BOH] [Z]                         False
+Botswana (BOT)                                  False
+Brazil (BRA)                                     True
+British West Indies (BWI) [BWI]                 False
+Bulgaria (BUL) [H]                               True
+Burundi (BDI)                                    True
+Cameroon (CMR)                                   True
+Canada (CAN)                                     True
+Chile (CHI) [I]                                  True
+China (CHN) [CHN]                                True
+Colombia (COL)                                   True
+Costa Rica (CRC)                                 True
+Ivory Coast (CIV) [CIV]                         False
+Croatia (CRO)                                    True
+Cuba (CUB) [Z]                                   True
+Cyprus (CYP)                                    False
+                                                ...  
+Sri Lanka (SRI) [SRI]                           False
+Sudan (SUD)                                     False
+Suriname (SUR) [E]                               True
+Sweden (SWE) [Z]                                 True
+Switzerland (SUI)                                True
+Syria (SYR)                                      True
+Chinese Taipei (TPE) [TPE] [TPE2]                True
+Tajikistan (TJK)                                False
+Tanzania (TAN) [TAN]                            False
+Thailand (THA)                                   True
+Togo (TOG)                                      False
+Tonga (TGA)                                     False
+Trinidad and Tobago (TRI) [TRI]                  True
+Tunisia (TUN)                                    True
+Turkey (TUR)                                     True
+Uganda (UGA)                                     True
+Ukraine (UKR)                                    True
+United Arab Emirates (UAE)                       True
+United States (USA) [P] [Q] [R] [Z]              True
+Uruguay (URU)                                    True
+Uzbekistan (UZB)                                 True
+Venezuela (VEN)                                  True
+Vietnam (VIE)                                   False
+Virgin Islands (ISV)                            False
+Yugoslavia (YUG) [YUG]                           True
+Independent Olympic Participants (IOP) [IOP]    False
+Zambia (ZAM) [ZAM]                              False
+Zimbabwe (ZIM) [ZIM]                             True
+Mixed team (ZZX) [ZZX]                           True
+Totals                                           True
+Name: Gold, dtype: bool
+</code>
+</pre>
   </div>
 </article>
-<%- partial('_partial/comments') %>
+
+
 
         
           <div id="footer-post-container">
