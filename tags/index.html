@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- so meta -->
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
@@ -43,14 +43,13 @@
     
       <link rel="stylesheet" href="/css/rtl.css">
     
-    <!-- rss -->
+    <!-- rss --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
     
 </head>
 
-<body class="max-width mx-auto px3 ltr">
-    
-    <div class="content index py4">
+<body class="max-width mx-auto px3 ltr">    
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="content index py4">
         
           <header id="header">
   <a href="/">
@@ -136,7 +135,7 @@
                 
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Blockchain/" style="font-size: 12px;">Blockchain</a> <a href="/tags/English-Learning/" style="font-size: 30px;">English Learning</a> <a href="/tags/Hexo/" style="font-size: 18px;">Hexo</a> <a href="/tags/Machine-Learning/" style="font-size: 12px;">Machine Learning</a> <a href="/tags/Marketing/" style="font-size: 12px;">Marketing</a> <a href="/tags/NumPy/" style="font-size: 12px;">NumPy</a> <a href="/tags/Python/" style="font-size: 18px;">Python</a> <a href="/tags/begin/" style="font-size: 12px;">begin</a> <a href="/tags/pandas/" style="font-size: 24px;">pandas</a> <a href="/tags/tutorial/" style="font-size: 18px;">tutorial</a>
+              <a href="/tags/Blockchain/" style="font-size: 12px;">Blockchain</a> <a href="/tags/English-Learning/" style="font-size: 30px;">English Learning</a> <a href="/tags/Hexo/" style="font-size: 18px;">Hexo</a> <a href="/tags/Machine-Learning/" style="font-size: 18px;">Machine Learning</a> <a href="/tags/Marketing/" style="font-size: 12px;">Marketing</a> <a href="/tags/NumPy/" style="font-size: 12px;">NumPy</a> <a href="/tags/Python/" style="font-size: 18px;">Python</a> <a href="/tags/begin/" style="font-size: 12px;">begin</a> <a href="/tags/pandas/" style="font-size: 24px;">pandas</a> <a href="/tags/tutorial/" style="font-size: 18px;">tutorial</a>
             </div>
           </div>
         
@@ -168,6 +167,21 @@
 </footer>
 
     </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
 <!-- styles -->
@@ -204,5 +218,6 @@
     </script>
 
 <!-- Disqus Comments -->
+
 
 
