@@ -1268,7 +1268,8 @@ article .content .caption {
 }
 .pagination {
   display: inline-block;
-  margin-top: 2rem;
+  position: absolute;
+  top: 36rem;
   width: 100%;
   text-align: center;
 }

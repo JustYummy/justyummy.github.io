@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hijia.xin/2018/10/24/Machine-Learning-by-Google/</loc>
+    
+    <lastmod>2018-11-05T08:53:53.044Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hijia.xin/2018/10/10/Hexo-Scrolling-Table/</loc>
+    
+    <lastmod>2018-11-03T07:50:16.034Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hijia.xin/about/index.html</loc>
     
     <lastmod>2018-10-29T07:42:06.399Z</lastmod>
@@ -30,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://hijia.xin/2018/10/24/Machine-Learning-by-Google/</loc>
-    
-    <lastmod>2018-10-25T04:09:12.099Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hijia.xin/2018/10/12/Key-Point-on-DataFrame/</loc>
     
     <lastmod>2018-10-16T03:19:50.627Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://hijia.xin/2018/10/10/Something-about-pandas/</loc>
     
     <lastmod>2018-10-15T09:10:11.978Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hijia.xin/2018/10/10/Hexo-Scrolling-Table/</loc>
-    
-    <lastmod>2018-10-15T09:07:06.251Z</lastmod>
     
   </url>
   
