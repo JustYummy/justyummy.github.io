@@ -931,7 +931,7 @@ body {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 100%;
-  text-align: center;
+  text-align: right;
   white-space: nowrap;
 }
 #footer-post #actions-footer a {
