@@ -781,7 +781,13 @@ body {
   display: block;
   font-style: italic;
 }
-#header-post #actions li {
+#header-post #share {
+  clear: both;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+#header-post #share li {
   display: block;
   margin: 0;
 }
@@ -933,14 +939,20 @@ body {
   padding-left: 1rem;
   color: #2bbc8a;
 }
-#footer-post #actions-footer ul {
+#footer-post #share-footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: #323539;
+  text-align: center;
+}
+#footer-post #share-footer ul {
   display: table;
   margin: 0;
   padding: 0;
   width: 100%;
   list-style-type: none;
 }
-#footer-post #actions-footer ul li {
+#footer-post #share-footer ul li {
   display: inline-table;
   padding: 10px;
   width: 20%;

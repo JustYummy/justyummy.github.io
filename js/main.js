@@ -10,6 +10,34 @@ if (!!$.prototype.justifiedGallery) {
   $(".article-gallery").justifiedGallery(options);
 }
 
+// function addDarkTheme() {
+//   var link = document.createElement('link');
+//   link.type = 'text/css';
+//   link.id = "theme-dark";  
+//   link.rel = 'stylesheet';
+//   link.href = '/css/style2.css';
+//   document.getElementsByTagName("head")[0].appendChild(link);
+// }
+
+// function removeDarkTheme() {
+//   $('#theme-dark').remove();
+// }
+
+// count = 0
+// function sclick() {
+//   // alert("Can not change theme");
+//   if (count % 2 == 0) {
+//     addDarkTheme()
+//     count += 1
+//   }else{
+//     removeDarkTheme()
+//     count += 1
+//   }
+// }
+
+
+// 全局切换，不过黑色刷新出现白色闪动。原因是预先加载了白色css
+
 function addDarkTheme() {
   var link = document.createElement('link');
   link.type = 'text/css';
@@ -25,8 +53,6 @@ function removeDarkTheme() {
 
 function sclick() {
   // alert("Can not change theme");
-  // alert(cout)
-  // alert(getThemeCSSName() == 'dark')
   if (getThemeCSSName() == 'light') {
     addDarkTheme()
     setCookie('theme', 'dark')
