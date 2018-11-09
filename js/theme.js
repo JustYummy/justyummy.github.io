@@ -28,7 +28,8 @@ function removeDarkTheme() {
 function sclick() {
   if (getThemeCSSName() == 'light') {
     addDarkTheme()
-    setTimeout(function(){runDarkCode()}, 50)  //延迟执行避免由乱码
+    setCookie('theme', 'dark')
+    // setTimeout(function(){runDarkCode()}, 50)  //延迟执行避免由乱码
   }else{
     addLightTheme()
     setTimeout(function(){runLightCode()}, 50)
@@ -36,10 +37,10 @@ function sclick() {
   }
 }
 
-function runDarkCode(){
-    removeLightTheme()
-    setCookie('theme', 'dark')
-}
+// function runDarkCode(){
+//     // removeLightTheme()
+//     setCookie('theme', 'dark')
+// }
 
 function runLightCode() {
     removeDarkTheme()
@@ -55,7 +56,7 @@ $(document).ready(function () {
     removeDarkTheme()
     setCookie('theme', 'light')
   }else{
-    removeLightTheme()
+    // removeLightTheme()
     setCookie('theme', 'dark')
   }
 })
