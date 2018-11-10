@@ -1,18 +1,8 @@
-
-function addLightTheme() {
-  var link = document.createElement('link');
-  link.id = "theme-light";  
-  link.rel = 'stylesheet';
-  link.href = '/css/style.css';
-  document.getElementsByTagName("head")[0].appendChild(link);
-}
-
-function removeLightTheme() {
-  $('#theme-light').remove();
-}
+// 全局切换，不过黑色刷新出现白色闪动。原因是预先加载了白色css
 
 function addDarkTheme() {
   var link = document.createElement('link');
+  link.type = 'text/css';
   link.id = "theme-dark";  
   link.rel = 'stylesheet';
   link.href = '/css/style2.css';
@@ -23,44 +13,31 @@ function removeDarkTheme() {
   $('#theme-dark').remove();
 }
 
-
-
 function sclick() {
+  // alert("Can not change theme");
   if (getThemeCSSName() == 'light') {
     addDarkTheme()
     setCookie('theme', 'dark')
-    // setTimeout(function(){runDarkCode()}, 50)  //延迟执行避免由乱码
   }else{
-    addLightTheme()
-    setTimeout(function(){runLightCode()}, 50)
-    
-  }
-}
-
-// function runDarkCode(){
-//     // removeLightTheme()
-//     setCookie('theme', 'dark')
-// }
-
-function runLightCode() {
     removeDarkTheme()
     setCookie('theme', 'light')
+  }
 }
 
 function getThemeCSSName() {
   return getCookie('theme') || "light";
 }
 
-$(document).ready(function () {
-  if (getThemeCSSName() == 'light') {
-    removeDarkTheme()
-    setCookie('theme', 'light')
-  }else{
-    // removeLightTheme()
-    setCookie('theme', 'dark')
-  }
-})
+function useDarkTheme(useDark) {
+  if (useDark) {
+      addDarkTheme();
+      setCookie('theme', 'dark')
+  } 
+}
 
+$(document).ready(function () {
+  useDarkTheme(getThemeCSSName() == 'dark');
+})
 
 
 function setCookie ( name, value )
