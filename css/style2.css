@@ -939,6 +939,11 @@ body {
   padding-left: 1rem;
   color: #2bbc8a;
 }
+#footer-post #actions-button {
+  overflow: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
 #footer-post #share-footer {
   padding-right: 1rem;
   padding-left: 1rem;
