@@ -10,6 +10,14 @@ if (!!$.prototype.justifiedGallery) {
   $(".article-gallery").justifiedGallery(options);
 }
 
+// //更改footer图片大小
+// // if (window.innerWidth <= 623) {
+// if ($(document).width() <= 623) {
+//   $('#footer-picture').css('width', '100%');
+// } else {
+//   $('#footer-picture').css('width', 380);;
+// }
+
 // function addDarkTheme() {
 //   var link = document.createElement('link');
 //   link.type = 'text/css';
@@ -113,12 +121,12 @@ if (!!$.prototype.justifiedGallery) {
 //     setCookie ( name, "", -1 ) ;
 // }
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   /**
    * Shows the responsive navigation menu on mobile.
    */
-  $("#header > #nav > ul > .icon").click(function() {
+  $("#header > #nav > ul > .icon").click(function () {
     $("#header > #nav > ul").toggleClass("responsive");
   });
 
@@ -143,7 +151,7 @@ $(document).ready(function() {
     /**
      * Display the menu if the menu icon is clicked.
      */
-    menuIcon.click(function() {
+    menuIcon.click(function () {
       if (menu.css("visibility") === "hidden") {
         menu.css("visibility", "visible");
         menuIcon.addClass("active");
@@ -158,7 +166,7 @@ $(document).ready(function() {
      * Add a scroll listener to the menu to hide/show the navigation links.
      */
     if (menu.length) {
-      $(window).on("scroll", function() {
+      $(window).on("scroll", function () {
         var topDistance = menu.offset().top;
 
         // hide only the navigation links on desktop
@@ -170,10 +178,10 @@ $(document).ready(function() {
 
         // on tablet, hide the navigation icon as well and show a "scroll to top
         // icon" instead
-        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {
+        if (!$("#menu-icon").is(":visible") && topDistance < 50) {
           $("#menu-icon-tablet").show();
           $("#top-icon-tablet").hide();
-        } else if (! $( "#menu-icon" ).is(":visible") && topDistance > 100) {
+        } else if (!$("#menu-icon").is(":visible") && topDistance > 100) {
           $("#menu-icon-tablet").hide();
           $("#top-icon-tablet").show();
         }
@@ -184,12 +192,12 @@ $(document).ready(function() {
      * Show mobile navigation menu after scrolling upwards,
      * hide it again after scrolling downwards.
      */
-    if ($( "#footer-post").length) {
+    if ($("#footer-post").length) {
       var lastScrollTop = 0;
-      $(window).on("scroll", function() {
+      $(window).on("scroll", function () {
         var topDistance = $(window).scrollTop();
 
-        if (topDistance > lastScrollTop){
+        if (topDistance > lastScrollTop) {
           // downscroll -> show menu
           $("#footer-post").hide();
         } else {
@@ -211,6 +219,6 @@ $(document).ready(function() {
           $("#actions-footer > #top").show();
         }
       });
-    } 
+    }
   }
 });
