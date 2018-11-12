@@ -21,6 +21,7 @@ function sclick() {
     setCookie('theme', 'dark')
   } else {
     removeDarkTheme()
+    removeDarkThemeColor()
     setCookie('theme', 'light')
   }
 }
@@ -46,6 +47,10 @@ function addDarkThemeColor() {    //添加Chrome状态栏颜色
   meta.name = 'theme-color';
   meta.content = '#1d1f21'
   document.getElementsByTagName("head")[0].appendChild(meta);
+}
+
+function removeDarkThemeColor() {
+  $('#theme-color').remove();
 }
 
 function setCookie(name, value) {
