@@ -1249,7 +1249,12 @@ article .content .caption {
   vertical-align: middle;
   line-height: 20px;
 }
-@media (min-width: 39rem) {
+#footer .footer-right {
+  height: 20px;
+  width: 380px;
+  line-height: 20px;
+}
+@media screen and (min-width: 623px) {
   #footer {
     display: flex;
     flex-flow: row wrap;
@@ -1264,6 +1269,19 @@ article .content .caption {
   }
   #footer .footer-right {
     align-self: flex-end;
+  }
+}
+@media screen and (max-width: 622px) {
+  #footer {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  #footer .footer-right {
+    align-self: flex-end;
+    width: 100%;
   }
 }
 .pagination {
