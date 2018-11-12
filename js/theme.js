@@ -21,7 +21,7 @@ function sclick() {
     setCookie('theme', 'dark')
   } else {
     removeDarkTheme()
-    removeDarkThemeColor()
+    addLightThemeColor()
     setCookie('theme', 'light')
   }
 }
@@ -43,6 +43,7 @@ $(document).ready(function () {
 })
 
 function addDarkThemeColor() {    //添加Chrome状态栏颜色
+  $('#chrome-color').remove();
   var meta = document.createElement('meta');
   meta.name = 'theme-color';
   meta.id = 'chrome-color'
@@ -50,8 +51,13 @@ function addDarkThemeColor() {    //添加Chrome状态栏颜色
   document.getElementsByTagName("head")[0].appendChild(meta);
 }
 
-function removeDarkThemeColor() {
+function addLightThemeColor() {
   $('#chrome-color').remove();
+  var meta = document.createElement('meta');
+  meta.name = 'theme-color';
+  meta.id = 'chrome-color'
+  meta.content = '#ffffff'
+  document.getElementsByTagName("head")[0].appendChild(meta);
 }
 
 function setCookie(name, value) {
