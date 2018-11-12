@@ -45,12 +45,13 @@ $(document).ready(function () {
 function addDarkThemeColor() {    //添加Chrome状态栏颜色
   var meta = document.createElement('meta');
   meta.name = 'theme-color';
+  meta.id = 'chrome-color'
   meta.content = '#1d1f21'
   document.getElementsByTagName("head")[0].appendChild(meta);
 }
 
 function removeDarkThemeColor() {
-  $('#theme-color').remove();
+  $('#chrome-color').remove();
 }
 
 function setCookie(name, value) {
