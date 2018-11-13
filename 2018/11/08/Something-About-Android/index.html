@@ -17,7 +17,7 @@
 <meta property="og:description" content="1.AndroidManifest&amp;lt;activity android:name=&quot;.HelloWorldActivity&quot;&amp;gt;            &amp;lt;intent-filter&amp;gt;                &amp;lt;action android:name=&quot;android.intent.action.MAIN&quot; /&amp;gt;                &amp;lt;categ">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://hijia.xin/picture/android/using_menu.png">
-<meta property="og:updated_time" content="2018-11-08T11:31:56.773Z">
+<meta property="og:updated_time" content="2018-11-13T00:33:43.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Something About Android">
 <meta name="twitter:description" content="1.AndroidManifest&amp;lt;activity android:name=&quot;.HelloWorldActivity&quot;&amp;gt;            &amp;lt;intent-filter&amp;gt;                &amp;lt;action android:name=&quot;android.intent.action.MAIN&quot; /&amp;gt;                &amp;lt;categ">
@@ -77,12 +77,19 @@
     <br/>
     <span id="actions">
       <ul>
+        <li>
+          <a class="icon" href="/">
+            <i class="fab fa-hotjar" aria-hidden="true" onmouseover="$('#i-home').toggle();" onmouseout="$('#i-home').toggle();">
+            </i>
+          </a>
+        </li>
         
         
         <li><a class="icon" href="/2018/10/24/Machine-Learning-by-Google/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
       </ul>
+      <span id="i-home" class="info" style="display:none;">Back to Home</span>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
       <span id="i-top" class="info" style="display:none;">Back to top</span>
@@ -96,7 +103,7 @@
 
     
     <div id="ct" style="z-index: 9999; position: fixed ! important; right: 20px; bottom: 20px;" onclick="javascript:sclick();">
-      <img src="/images/logo.png" title="change theme" alt="changetheme" width="30" height="30">
+      <img src="/images/logo.png" title="Click to change the Theme" alt="theme-change-button" width="30" height="30">
     </div>
     <div class="content index py4">
         
@@ -147,7 +154,7 @@
 <p>verbose &gt; debug &gt; info &gt; warn &gt; error</p>
 <h3 id="3-Making-a-Toast"><a href="#3-Making-a-Toast" class="headerlink" title="3.Making a Toast"></a>3.Making a Toast</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Button button1 = (Button) findViewById(R.id.button_1);	<span class="comment">//Create a button</span></span><br><span class="line">        button1.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="comment">//Add a Listener</span></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                <span class="comment">//making a toast</span></span><br><span class="line">                Toast.makeText(FirstActivity.<span class="keyword">this</span>, <span class="string">"You Win!"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">                <span class="comment">//(Activity, String, Time)</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="4-Using-a-menu"><a href="#4-Using-a-menu" class="headerlink" title="4.Using a menu"></a>4.Using a menu</h3><p> <img src="/picture/android/using_menu.png" width="200" alt="pic" align="center"></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onCreateOptionsMenu</span><span class="params">(Menu menu)</span> </span>&#123;</span><br><span class="line">    getMenuInflater().inflate(R.menu.main, menu);   <span class="comment">//创建一个菜单项目，从R.menu.main里添加到menu上，只有界面</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;   <span class="comment">//菜单项操作</span></span><br><span class="line">    <span class="keyword">switch</span> (item.getItemId()) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.add_item: <span class="comment">//增加按键</span></span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, <span class="string">"You clicked Add"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.remove_item:  <span class="comment">//去除按键</span></span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, <span class="string">"You clicked Remove"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onCreateOptionsMenu</span><span class="params">(Menu menu)</span> </span>&#123;</span><br><span class="line">    getMenuInflater().inflate(R.menu.main, menu);   </span><br><span class="line">    <span class="comment">//创建一个菜单项目，从R.menu.main里添加到menu上，只有界面</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;   <span class="comment">//菜单项操作</span></span><br><span class="line">    <span class="keyword">switch</span> (item.getItemId()) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.add_item: <span class="comment">//增加按键</span></span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, <span class="string">"You clicked Add"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.remove_item:  <span class="comment">//去除按键</span></span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, <span class="string">"You clicked Remove"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
   </div>
 </article>
 

@@ -75,6 +75,12 @@
     <br/>
     <span id="actions">
       <ul>
+        <li>
+          <a class="icon" href="/">
+            <i class="fab fa-hotjar" aria-hidden="true" onmouseover="$('#i-home').toggle();" onmouseout="$('#i-home').toggle();">
+            </i>
+          </a>
+        </li>
         
         <li><a class="icon" href="/2018/10/15/Advanced-Python-Pandas/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
@@ -83,6 +89,7 @@
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
       </ul>
+      <span id="i-home" class="info" style="display:none;">Back to Home</span>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
       <span id="i-top" class="info" style="display:none;">Back to top</span>
@@ -96,7 +103,7 @@
 
     
     <div id="ct" style="z-index: 9999; position: fixed ! important; right: 20px; bottom: 20px;" onclick="javascript:sclick();">
-      <img src="/images/logo.png" title="change theme" alt="changetheme" width="30" height="30">
+      <img src="/images/logo.png" title="Click to change the Theme" alt="theme-change-button" width="30" height="30">
     </div>
     <div class="content index py4">
         
