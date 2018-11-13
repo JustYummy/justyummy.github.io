@@ -1198,6 +1198,9 @@ article .content .caption {
   font-size: 14px;
 }
 @media (min-width: 480px) {
+  #archive .post-list {
+    height: 378px;
+  }
   #archive .post-list .post-item {
     display: flex;
     margin-bottom: 5px;

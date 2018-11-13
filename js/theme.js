@@ -1,6 +1,6 @@
 // 全局切换，不过黑色刷新出现白色闪动。原因是预先加载了白色css
 
-console.log("Screen",  window.innerWidth)
+// console.log("Screen",  window.innerWidth)
 function addDarkTheme() {
   var link = document.createElement('link');
   link.type = 'text/css';
