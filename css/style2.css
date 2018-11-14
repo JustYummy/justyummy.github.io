@@ -1080,7 +1080,14 @@ article .content h2:before {
   font-weight: bold;
   font-size: 1.2rem;
 }
-article .content img,
+article .content img {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
 article .content video {
   display: block;
   margin: auto;
@@ -1198,6 +1205,9 @@ article .content .caption {
   font-size: 14px;
 }
 @media (min-width: 480px) {
+  #archive .post-list {
+    height: 378px;
+  }
   #archive .post-list .post-item {
     display: flex;
     margin-bottom: 5px;
