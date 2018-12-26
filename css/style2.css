@@ -1081,8 +1081,8 @@ article .content h2:before {
   font-size: 1.2rem;
 }
 article .content img {
-  -webkit-filter: brightness(0.9);
-  filter: brightness(0.9);
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
   display: block;
   margin: auto;
   max-width: 100%;
