@@ -1387,63 +1387,68 @@ article .content .caption {
   content: ")";
 }
 .highlight {
-  color: #585260;
-  background: #efecf4;
+  color: #000;
+  background: #eee;
 }
-.highlight .code .comment,
-.highlight .code .quote {
-  color: #655f6d;
-}
-.highlight .code .variable,
-.highlight .code .template-variable,
-.highlight .code .attribute,
-.highlight .code .tag,
-.highlight .code .name,
-.highlight .code .regexp,
 .highlight .code .link,
-.highlight .code .selector-id,
-.highlight .code .selector-class {
-  color: #be4678;
-}
-.highlight .code .number,
-.highlight .code .meta,
-.highlight .code .built_in,
-.highlight .code .builtin-name,
-.highlight .code .literal,
-.highlight .code .type,
-.highlight .code .params {
-  color: #aa573c;
-}
-.highlight .code .string,
-.highlight .code .symbol,
-.highlight .code .bullet {
-  color: #2a9292;
-}
-.highlight .code .title,
-.highlight .code .section {
-  color: #576ddb;
-}
-.highlight .code .keyword,
-.highlight .code .selector-tag {
-  color: #955ae7;
-}
-.highlight .code .deletion,
+.highlight .code .emphasis,
+.highlight .code .attribute,
 .highlight .code .addition {
-  color: #19171c;
-  display: inline-block;
-  width: 100%;
-}
-.highlight .code .deletion {
-  background-color: #be4678;
-}
-.highlight .code .addition {
-  background-color: #2a9292;
+  color: #070;
 }
 .highlight .code .emphasis {
   font-style: italic;
 }
+.highlight .code .strong,
+.highlight .code .string,
+.highlight .code .deletion {
+  color: #d14;
+}
 .highlight .code .strong {
   font-weight: bold;
+}
+.highlight .code .quote,
+.highlight .code .comment {
+  color: #998;
+  font-style: italic;
+}
+.highlight .code .section,
+.highlight .code .title {
+  color: #900;
+}
+.highlight .code .class .title,
+.highlight .code .type {
+  color: #458;
+}
+.highlight .code .variable,
+.highlight .code .template-variable {
+  color: #369;
+}
+.highlight .code .bullet {
+  color: #970;
+}
+.highlight .code .meta {
+  color: #34b;
+}
+.highlight .code .code,
+.highlight .code .number,
+.highlight .code .literal,
+.highlight .code .keyword,
+.highlight .code .selector-tag {
+  color: #099;
+}
+.highlight .code .regexp {
+  background-color: #fff0ff;
+  color: #808;
+}
+.highlight .code .symbol {
+  color: #990073;
+}
+.highlight .code .tag,
+.highlight .code .name,
+.highlight .code .selector-id,
+.highlight .code .selector-class {
+  color: #070;
 }
 pre {
   overflow-x: auto;
