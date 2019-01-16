@@ -417,6 +417,8 @@ body table {
   border-collapse: collapse;
   text-align: left;
   font-size: 12px;
+  overflow: auto;
+  display: block;
 }
 body th {
   padding: 8px;
