@@ -7,7 +7,7 @@
       <link href="/2019/01/18/Android-Components-2/"/>
       <url>/2019/01/18/Android-Components-2/</url>
       
-        <content type="html"><![CDATA[<p>to bo continue…</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-Spinner"><a href="#1-Spinner" class="headerlink" title="1.Spinner"></a>1.Spinner</h2><p>采用TextView实现</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/tv_spinner"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawableRight</span>=<span class="string">"@drawable/arrow_down"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_toRightOf</span>=<span class="string">"@+id/tv_dialog"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textColor</span>=<span class="string">"@color/black"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textSize</span>=<span class="string">"17sp"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line">tv_spinner.text = satellites[<span class="number">0</span>]</span><br><span class="line"><span class="comment">//设置默认显示</span></span><br><span class="line">tv_spinner.setOnClickListener &#123;</span><br><span class="line">    selector(<span class="string">"请选择行星"</span>, satellites)&#123;dialogInterface, i -&gt;</span><br><span class="line">        tv_spinner.text = satellites[i]</span><br><span class="line">        toast(<span class="string">"你选择的行星是<span class="subst">$&#123;tv_spinner.text&#125;</span>"</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="2-ListView"><a href="#2-ListView" class="headerlink" title="2.ListView"></a>2.ListView</h2>]]></content>
       
       
       <categories>
@@ -90,9 +90,9 @@
       
         <tags>
             
-            <tag> tutorial </tag>
-            
             <tag> Kotlin </tag>
+            
+            <tag> tutorial </tag>
             
             <tag> Python </tag>
             
@@ -188,9 +188,9 @@
       
         <tags>
             
-            <tag> pandas </tag>
-            
             <tag> Python </tag>
+            
+            <tag> pandas </tag>
             
         </tags>
       
@@ -489,9 +489,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> tutorial </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       

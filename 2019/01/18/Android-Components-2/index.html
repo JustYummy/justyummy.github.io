@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/theme.js"></script>
-    <meta name="description" content="to bo continue…">
+    <meta name="description" content="1.Spinner采用TextView实现 &amp;lt;TextView    android:id=&quot;@+id/tv_spinner&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;match_parent&quot;    android:gravity=&quot;center&quot;    android:drawableRight=&quot;">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android Components 2">
 <meta property="og:url" content="http://hijia.xin/2019/01/18/Android-Components-2/index.html">
 <meta property="og:site_name" content="Begin">
-<meta property="og:description" content="to bo continue…">
+<meta property="og:description" content="1.Spinner采用TextView实现 &amp;lt;TextView    android:id=&quot;@+id/tv_spinner&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;match_parent&quot;    android:gravity=&quot;center&quot;    android:drawableRight=&quot;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-18T12:06:57.721Z">
+<meta property="og:updated_time" content="2019-01-19T02:45:41.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Components 2">
-<meta name="twitter:description" content="to bo continue…">
+<meta name="twitter:description" content="1.Spinner采用TextView实现 &amp;lt;TextView    android:id=&quot;@+id/tv_spinner&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;match_parent&quot;    android:gravity=&quot;center&quot;    android:drawableRight=&quot;">
     
     
         
@@ -94,7 +94,7 @@
     </span>
     <br>
     <div id="toc">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Spinner"><span class="toc-number">1.</span> <span class="toc-text">1.Spinner</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-ListView"><span class="toc-number">2.</span> <span class="toc-text">2.ListView</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -148,8 +148,10 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>to bo continue…</p>
-
+    <h2 id="1-Spinner"><a href="#1-Spinner" class="headerlink" title="1.Spinner"></a>1.Spinner</h2><p>采用TextView实现</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/tv_spinner"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawableRight</span>=<span class="string">"@drawable/arrow_down"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_toRightOf</span>=<span class="string">"@+id/tv_dialog"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textColor</span>=<span class="string">"@color/black"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textSize</span>=<span class="string">"17sp"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line">tv_spinner.text = satellites[<span class="number">0</span>]</span><br><span class="line"><span class="comment">//设置默认显示</span></span><br><span class="line">tv_spinner.setOnClickListener &#123;</span><br><span class="line">    selector(<span class="string">"请选择行星"</span>, satellites)&#123;dialogInterface, i -&gt;</span><br><span class="line">        tv_spinner.text = satellites[i]</span><br><span class="line">        toast(<span class="string">"你选择的行星是<span class="subst">$&#123;tv_spinner.text&#125;</span>"</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-ListView"><a href="#2-ListView" class="headerlink" title="2.ListView"></a>2.ListView</h2>
   </div>
 </article>
 
@@ -167,7 +169,7 @@
       </ul>
     </div>
     <div id="toc-footer" style="display: none">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Spinner"><span class="toc-number">1.</span> <span class="toc-text">1.Spinner</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-ListView"><span class="toc-number">2.</span> <span class="toc-text">2.ListView</span></a></li></ol>
     </div>
 
 
@@ -194,6 +196,23 @@
   </div>
 </footer>
     </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
@@ -211,20 +230,4 @@
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
-<!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-<!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
 
